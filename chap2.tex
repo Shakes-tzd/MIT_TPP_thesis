@@ -126,7 +126,7 @@ where:
 \end{description}
 
 \begin{flushleft}
-The MCMC enables the estimation of the sampling of the posterior distribution which is the left-hand side of Equation~\ref{bayes_eq}. To run the MCMC we establish a function that outputs a model given a set of input parameters. We modelled the Hg concentration at a particular grid box as a linear combination of Hg concentration signals from the case study region and the baseline Hg concentration as shown in the Equation \ref{Hg_conc} below:
+The MCMC enables the estimation of the sampling of the posterior distribution which is the left-hand side of Equation~\ref{bayes_eq}. The MCMC is set set up by following a set of steps that include defining a function that outputs a model given a set of input parameters and establishing an ensemble of walkers defined by a $\theta$ vector that contains a set of parameters form the model generating function.For the  We modelled the Hg concentration at a particular grid box as a linear combination of Hg concentration signals from the case study region and the baseline Hg concentration as shown in the Equation \ref{Hg_conc} below:
 
 \begin{align}
 \begin{split}\label{Hg_conc}
