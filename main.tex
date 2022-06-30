@@ -25,21 +25,36 @@
 %% Page Intentionally Left Blank'', use the ``leftblank'' option, as
 %% above. 
 
-\documentclass[12pt,twoside]{mitthesis}
+\documentclass[12pt,oneside]{mitthesis}
 \usepackage{lgrind}
 %% These have been added at the request of the MIT Libraries, because
 %% some PDF conversions mess up the ligatures.  -LB, 1/22/2014
 \usepackage{cmap}
+\usepackage{times}
 \usepackage{amsmath}
 \usepackage{enumitem}
-\usepackage{calc}  
+\usepackage{calc}
+\usepackage{siunitx} % Required for alignment
+\sisetup{
+  round-mode          = places, % Rounds numbers
+  round-precision     = 3, % to 2 places
+}
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}}
 %\documentclass{article}
 \usepackage{graphicx}
+% \usepackage{epstopdf}
+%   \epstopdfDeclareGraphicsRule{.pdf}{png}{.png}{convert #1 \OutputFile}
+%   \DeclareGraphicsExtensions{.png,.pdf}
+%\includegraphics
 \graphicspath{ {./figures/} }
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage[section]{placeins}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{geometry}
 \usepackage[none]{hyphenat}
+\usepackage{float}
 
 %\usepackage{xltxtra}
 \usepackage{libertine}

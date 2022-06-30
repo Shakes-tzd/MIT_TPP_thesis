@@ -29,8 +29,8 @@ Although Brazil nut, coffee, papaya, and cacao are cultivated, the land is prima
 \begin{flushleft}
 Hg has been extensively studied in Madre de Dios, both in people and in the environment. Prior environmental measurements performed in Madre de Dios regarding the amount of Hg entering soil, air, and waterways reflected drastically different results between government estimates and international researchers. This demonstrates a need to generate further system-wide constraints on ASGM Hg use and pollution. Some studies focus on human health in the region (Gibb \& O'Leary, 2014), and others have bridged natural science perspectives with community engagement and trans-disciplinary approaches (Landon et al., 2015). Through leveraging national and global emission inventories, long-range measurements of Hg concentration in the atmosphere, and the GEOS-Chem Chemical Transport Model, this project complements previous studies and distinguishes itself from previous studies in this highly-studied region. Results will be generated for the Madre de Dios region and its surrounding areas that have high ASGM activity. 
 \end{flushleft}
-\begin{figure}[h!]
-  \includegraphics[scale=0.75]{templates/figures/Case_Study_region.png}
+\begin{figure}[H]
+  \includegraphics[scale=0.5]{templates/figures/Case_Study_region.png}
   \centering
   \caption{Map Showing the case study Region in Peru}
   \label{fig:PeruCS}
@@ -38,14 +38,14 @@ Hg has been extensively studied in Madre de Dios, both in people and in the envi
 \FloatBarrier
 
 \begin{flushleft}
-To develop a comprehensive understanding of how Hg pollution impacts the environment, long-term monitoring of ambient mercury data on a global scale is vital to assessing its emission, transportation, atmospheric chemistry, and deposition processes. In South America, especially in tropical regions, atmospheric mercury (Hg) data are rare; hence mercury dynamics are not well understood. The Global Mercury Observation System (GMOS) is one of only a few major global projects that aim to develop a standardized, coordinated global observing system for mercury pollution across the globe. Funded by the European Union, it comprises a vast network of ground-based monitoring stations, regular oceanographic cruises, and measurements in the lower and upper tropospheres and the lower stratosphere[cite]. More than 40 ground-based monitoring sites constitute the international network, covering many regions with limited to no observational data available before GMOS[cite]. Figure \ref{fig:GMOS_stations} shows the GMOS monitoring network sites in South America. Available Hg observation data from the GMOS stations on Figure \ref{fig:GMOS_stations} was obtained from the GMOS online database as well as published studies on the different sites. Atmospheric total gaseous mercury (TGM) data was  measured at these different stations using a Tekran analyzers (Tekran Inc., Toronto, Canada). 
+To develop a comprehensive understanding of how Hg pollution impacts the environment, long-term monitoring of ambient mercury data on a global scale is vital to assessing its emission, transportation, atmospheric chemistry, and deposition processes. In South America, especially in tropical regions, atmospheric mercury (Hg) data are rare; hence mercury dynamics are not well understood. The Global Mercury Observation System (GMOS) is one of only a few major global projects that aim to develop a standardized, coordinated global observing system for mercury pollution across the globe. Funded by the European Union, it comprises a vast network of ground-based monitoring stations, regular oceanographic cruises, and measurements in the lower and upper tropospheres and the lower stratosphere[cite]. More than 40 ground-based monitoring sites constitute the international network, covering many regions with limited to no observational data available before GMOS[cite]. Figure \ref{fig:GMOS_stations_map} shows the GMOS monitoring network sites in South America. Available Hg observation data from the GMOS stations on Figure \ref{fig:GMOS_stations} was obtained from the GMOS online database as well as published studies on the different sites. Atmospheric total gaseous mercury (TGM) data was  measured at these different stations using a Tekran analyzers (Tekran Inc., Toronto, Canada). 
 \end{flushleft}
 
-\begin{figure}[h]
-  \includegraphics[scale=0.75]{templates/figures/GMOS_stations.png}
-  \centering
+\begin{figure}[H]
+  \includegraphics[width=0.85\textwidth]{templates/figures/GMOS_Sites/GMOS_map.pdf}
   \caption{Map Showing the GMOS Monitoring Network Sites in South America}
-  \label{fig:GMOS_stations}
+  \label{fig:GMOS_stations_map}
+  \centering
   
 \end{figure}
 \FloatBarrier
@@ -60,7 +60,18 @@ Herein we simulated the Hg concentration in the atmosphere using version 12.8.0 
 \end{flushleft}
 
 \begin{flushleft}
-The GEOS-Chem Hg model takes the emissions inventory as an input and output the Hg concentration in the atmosphere that results from the input emissions. Moreover, the Hg concentration output is directly proportional to the amount of input emissions. Consequently, the GMA 2018 ASGM emissions estimates from individual grid boxes in the case study region as seen in Figure \ref{fig:GMA_2018} were scaled and then used as input to the GEOS-Chem model. The emissions were scaled to investigate the relationship between the Hg concentration in the atmosphere and the changes in ASGM emissions from the case study region in Peru. Moreover, the Hg concentration signal resulting from scaling the emissions from a particular grid box was calculated using Equation \ref{doublingSig} below:
+The GEOS-Chem Hg model takes the emissions inventory as an input and output the Hg concentration in the atmosphere that results from the input emissions. Moreover, the Hg concentration output is directly proportional to the amount of input emissions. 
+\end{flushleft}
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/Peru_Maps/Hg_inventories.pdf}
+  \centering
+  \caption{Comparison of different Hg emission estimates by different global inventories}
+  \label{fig:Hg_inventories}
+  
+\end{figure}
+\FloatBarrier
+\begin{flushleft}
+Consequently, the GMA 2018 ASGM emissions estimates from individual grid boxes in the case study region as seen in Figure \ref{fig:GMA2018} were scaled and then used as input to the GEOS-Chem model. The emissions were scaled to investigate the relationship between the Hg concentration in the atmosphere and the changes in ASGM emissions from the case study region in Peru. Moreover, the Hg concentration signal resulting from scaling the emissions from a particular grid box was calculated using Equation \ref{doublingSig} below:
 \end{flushleft}
 
 \begin{flushleft}
@@ -95,15 +106,30 @@ where:
     
     \item [$m$] is the amount of emissions, in metric tonnes, from a grid box required to produce $Hg_{m}$ concentration in the atmosphere
 \end{description}
+\begin{figure}[H]
 
-\begin{figure}[h]
-  \includegraphics[scale=0.75]{templates/figures/GMA2018.png}
-  \centering
-  \caption{Map showing how the GMA2018 emission estimates for the year 2015 were distributed in Peru }
-  \label{fig:GMA_2018}
+\begin{tabular}[H]{cc}
+
+\subfloat[GMA 2015 Grid]{\includegraphics[width = 0.45\linewidth]{templates/figures/Peru_Maps/GMA2018inventory025x025.pdf}} &
+\subfloat[GEOS Chem Grid]{\includegraphics[width = 0.45\linewidth]{templates/figures/Peru_Maps/GMA2018inventory2x25.pdf}}\\
+
+
+\end{tabular}
   
+\centering
+\captionof{figure}{Map showing how the GMA2018 emission estimates for the year 2015 were distributed in Peru }
+\label{fig:GMA2018}
 \end{figure}
 \FloatBarrier
+
+% \begin{figure}[H]
+%   \includegraphics[scale=0.75]{templates/figures/GMA2018.png}
+%   \centering
+%   \caption{Map showing how the GMA2018 emission estimates for the year 2015 were distributed in Peru }
+%   \label{fig:GMA_2018}
+  
+% \end{figure}
+% \FloatBarrier
 \begin{flushleft}
 For each grid box in the case study region, the emissions were modified from their original GMA 2018 estimates to new values based on Hg emission estimates produced by the Artisanal Gold Council(AGC)
 \end{flushleft}
@@ -126,7 +152,7 @@ where:
 \end{description}
 
 \begin{flushleft}
-The MCMC enables the estimation of the sampling of the posterior distribution which is the left-hand side of Equation~\ref{bayes_eq}. The MCMC is set set up by following a set of steps that include defining a function that outputs a model given a set of input parameters and establishing an ensemble of walkers defined by a $\theta$ vector that contains a set of parameters form the model generating function.For the  We modelled the Hg concentration at a particular grid box as a linear combination of Hg concentration signals from the case study region and the baseline Hg concentration as shown in the Equation \ref{Hg_conc} below:
+The MCMC enables the estimation of the sampling of the posterior distribution which is the left-hand side of Equation~\ref{bayes_eq}. The MCMC is set set up by following a set of steps that include defining a function that outputs a model given a set of input parameters and establishing an ensemble of walkers defined by a $\theta$ vector that contains a set of parameters form the model generating function.For the model generating function the Hg concentration at a particular grid box is defined as a linear combination of Hg concentration signals from the case study region and the baseline Hg concentration as shown in the Equation \ref{Hg_conc} below:
 
 \begin{align}
 \begin{split}\label{Hg_conc}
@@ -174,58 +200,100 @@ Hg_{conc} =\begin{bmatrix} C & Hg_{sig_{(MdD)}} & Hg_{sig_{(S-Puno)}} &Hg_{sig_{
 where $\theta_0=1$ and $Hg_{conc}$ is the modeled Hg concentration at the observation site of interest.
 \end{flushleft}
 
+\begin{flushleft}
+The output of 
+\end{flushleft}
+
 \section{Results and Discussion}
 \begin{flushleft}
 
 
-Initial results, as seen in Figure \ref{fig:GMOSplots} indicated that the ASGM emissions related Hg concentration signal created by the GEOS-Chem model is prominent in only one of the GMOS sites. This is mountain site at the Chalcataya (CHC) regional station, Figure \ref{fig:GMOSplots} (a), (World Meteorological Organization, WMO, region III-- South America; 16.35023◦ S, 68.13143◦ W),which is at an altitude of 5240 meters above sea level, about 140m below the summit of mount Chacaltaya on the eastern edge of the ``Cordillera Real,'' with a horizon open to the south and west. CHC is about 300km from the ``Madre de Dios'' watershed. Further analysis and comparisons were carried out based on the data from the CHC site. Moreover, using the CHC site was pertinent because it is also the closest to the case study region. 
+Initial results, as seen in Figure \ref{fig:GMOSvsGC} indicated that the ASGM emissions related Hg concentration signal created by the GEOS-Chem model is prominent in only one of the GMOS sites during the measurement periods we compared to the GEOS-Chem simulation. The site that had a prominent ASGM  is mountain site at the Chalcataya (CHC) regional station, Figure \ref{fig:GMOSvsGC} (a), (World Meteorological Organization, WMO, region III-- South America; 16.35023◦ S, 68.13143◦ W),which is at an altitude of 5240 meters above sea level, about 140m below the summit of mount Chacaltaya on the eastern edge of the ``Cordillera Real,'' with a horizon open to the south and west. CHC is about 300km from the ``Madre de Dios'' watershed. We conducted further analysis of the extent to which the GEOS-Chem model reproduces the observed concentrations based on the data from the CHC site. Moreover, comparing the GEOS-Chem modeled concentrations to the CHC site was pertinent because it is also the site closest to the case study region. 
 \end{flushleft}
-\begin{figure}[h]
+\begin{figure}[H]
 
-\begin{tabular}[h]{cc}
+% \begin{tabular}[H]{cc}
 
-\subfloat[Chalcataya]{\includegraphics[width = 0.45\linewidth]{templates/figures/CHC.png}} &
-\subfloat[Bariloche]{\includegraphics[width = 0.45\linewidth]{templates/figures/BAR.png}}\\
+% \subfloat[Chalcataya]{\includegraphics[width = 0.45\linewidth]{templates/figures/GMOS_Sites/GMOS Observations vs GC_CHC.pdf}} &
+% \subfloat[Bariloche]{\includegraphics[width = 0.45\linewidth]{templates/figures/GMOS_Sites/GMOS Observations vs GC_BAR.pdf}}\\
 
-\subfloat[Calhau]{\includegraphics[width = 0.45\linewidth]{templates/figures/CAL.png}} &
-\subfloat[Niew Nickerie]{\includegraphics[width = 0.45\linewidth]{templates/figures/NIK.png}}\\
+% \subfloat[Calhau]{\includegraphics[width = 0.45\linewidth]{templates/figures/GMOS_Sites/GMOS Observations vs GC_CAL.pdf}} &
+% \subfloat[Niew Nickerie]{\includegraphics[width = 0.45\linewidth]{templates/figures/GMOS_Sites/GMOS Observations vs GC_NIK.pdf}}\\
 
-\subfloat[Manaus]{\includegraphics[width = 0.45\linewidth]{templates/figures/MAN.png}} &
-\subfloat[Sisal]{\includegraphics[width = 0.45\linewidth]{templates/figures/SIS.png}}\\
+% \subfloat[Manaus]{\includegraphics[width = 0.45\linewidth]{templates/figures/GMOS_Sites/GMOS Observations vs GC_MAN.pdf}} &
+% \subfloat[Sisal]{\includegraphics[width = 0.45\linewidth]{templates/figures/GMOS_Sites/GMOS Observations vs GC_SIS.pdf}}\\
 
-\end{tabular}
+% \end{tabular}
+\includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/GMOS_Sites.pdf}
+  \caption{Map Showing the GMOS Monitoring Network Sites in South America}
+  \label{fig:GMOS_stations}
+  
 \centering
 \captionof{figure}{Plots Showing Data and Modeling  Results from GMOS Monitoring Network Sites in South America}
-\label{fig:GMOSplots}
+\label{fig:GMOSvsGC}
 \end{figure}
 \FloatBarrier
-
+\subsection{Observed Hg Concentration at CHC}
 \begin{flushleft}
-Figure\ref{fig:ModelvsObs} shows the comparison of the GEOS-Chem Model time series output for a high resolution simulation (green) and low resolution simulation (blue) with observations (red) from CHC over the period from July 2014 to January 2016. review of the plot reveals that the observations follow a trend that is not observed in the model. Furthermore, increasing the resolution of the model increases the peaks in the GEOS-chem output Hg concentration. Koening et all, assert that the upward trend in the Hg concentration in the observations is due to ENSO hence they categorize the observation data into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. Since the GEOS chem Hg model assumes normal conditions when creating the simulation, the data that was recorded under normal conditions was used in the analysis that follows. Another critical observation over the NC period is the fact that the model overestimated the Hg Concentration in the atmosphere.   
+The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown on Figure\ref{fig:ObsTseries}. The characteristics of the observations over this measurement period were described in Koening et all,(2020). As shown by the 120 day moving average plot on Figure\ref{fig:ObsTseries}, we found that the observed TGM concentration in the atmosphere had a visible upward trend, which Koening et all, assert was due to the El Niño-Southern Oscillation (ENSO). Consequently, they categorized the Hg concentrations in the atmosphere at the CHC site into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. The meteorology associated with ENSO was not accounted for in the GEOS-Chem Hg model hence the GEOS-Chem simulated Hg concentration at CHC was compared to the observed Hg concentration under normal conditions.
 \end{flushleft}
 
-
-\begin{figure}[h]
-  \includegraphics[scale=0.5]{templates/figures/ModelvsObs/ModelvsObs_v1.png}
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/ObsTimeSeries.pdf}
+ 
+  \caption{The measured TGM concentration at CHC over the period from July 2014 to January 2016}
+  \label{fig:ObsTseries}
   \centering
-  \caption{Comparison of the GEOS-Chem Model time series output for a high resolution simulation and low resolution simulation with observations from CHC over the period from July 2014 to January 2016}
-  \label{fig:ModelvsObs}
 \end{figure}
 \FloatBarrier
 
 \begin{flushleft}
-Furthermore, a comparison of the modelled and observed  Hg concentration at CHC using a probability density plots as seen in Figure \ref{fig:Histplots} showed that the GEOS-Chem model recreates the interquatile range of the observations better that it recreates the mean Hg concentration in the atmosphere when ASGM Hg emissions are turned on. Figure \ref{fig:Histplots}(c) shows that the variability in the Hg concentration at CHC is influenced by ASGM Hg emissions.
+ The comparison between the observed and modelled Hg concentrations at CHC are shown on Figure \ref{fig:ModelvsObsNstats}. We found that the observed Hg concentration at CHC had an mean of 0.90 $ngm^{-3}$, which was only reproduced by the low resolution baseline GEOS-Chem simulation where global ASGM emission were turned off (LoRes Base No ASGM) shown by the green line plot. On the contrary, the low resolution baseline GEOS-Chem simulation where global ASGM emission were turned on (LoRes Base ASGM) shown by the blue line plot overestimated the mean by 29\%.
 \end{flushleft}
 
-\begin{figure}[h]
 
-\begin{tabular}[h]{cc}
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/ModelvsObs/TimeSeriesNsactter_obsVmodel_v1.pdf}
+  \centering
+  \caption{Observed vs modelled (3 different simulations) Hg concentration at CHC and scatter plots of how the model compares with the observations  }
+  \label{fig:ModelvsObsNstats}
+\end{figure}
+\FloatBarrier
+\begin{flushleft}
+ Similarly, the high resolution baseline GEOS-Chem simulation where global ASGM emission were turned on (HiRes Base ASGM) shown by the purple line plot overestimated the mean by 38\% as seen in Table \ref{tab:ModelvsObsStats}. Even though GEOS-Chem reproduced the mean Hg concentrations at CHC in the LoRes Base No ASGM simulation, the Spearman and Pearson correlations between the modelled and observed concentrations were very low at  1.63e-1 and 1.40e-1 respectively. Moreover, the $R^2$ between the observed and modelled concentrations in this simulation case was almost zero at 1.96e-2. Also, the LoRes No ASGM simulation did not reproduce the variability in the observed concentrations as evident in Figure \ref{fig:ModelvsObsNstats} and in Table \ref{tab:ModelvsObsStats} where we gleaned that the observations had more than twice the modelled variance. Furthermore, the observations had a higher interquartile range (IQR) than the modelled Hg concentration LoRes No ASGM case. In addition, we found that turning on ASGM emissions in GEOS-Chem led to Hg concentrations in the atmosphere that had a variance that is comparable with the variance observations as shown by the LoRes Base ASGM simulation comparison with the observations on Figure \ref{fig:ModelvsObsNstats} and Table \ref{tab:ModelvsObsStats}. However, we also discovered that turning on ASGM emissions in the model did not lead to improvements in the correlation between the modeled and observed Hg concentration in the atmosphere. 
+\end{flushleft}
+\setlength{\tabcolsep}{2.5pt}
+\begin{table}[H]
+  \begin{center}
+    \caption{Characteristics of observed and modelled Hg concentration in CHC}
+    \label{tab:ModelvsObsStats}
+    \begin{tabular}{lSSSSSS}
+       %<-- added & and content for each column
+      
+     & \textbf{$mean$}  & \textbf{$\sigma$}& \textbf{$iqr$} & & & \\
+     \cmidrule{2-5}
+     Observations & 0.90  & 0.148 & 0.157 &  & & \\
+     \textbf{Simulations} &  & & &\textbf{$r_s$} &\textbf{$r$} &\textbf{$R^2$}\\ %
+      \hline
+      Base (ASGM=OFF) & 0.91  & 0.063 & 0.101 & 0.163 & 0.140 & 0.0196\\ 
+      Base (ASGM=ON) & 1.16  & 0.138& 0.198 & 0.124 & 0.101 & 0.0102\\ % <--
+    \end{tabular}
+  \end{center}
+\end{table}
+\FloatBarrier
 
-\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/ModelvsObs/GC_noASGMvsObs.png}} &
-\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/ModelvsObs/GCasgm_vsObs.png}}\\
+\begin{flushleft}
+The relationship between the mean and variance in the observed and modeled Hg concentration in the atmosphere at CHC was further explored as shown on Figure \ref{fig:Histplots} which shows the extent to which that the GEOS-Chem model recreates the mean and IQR of the observations. Even though the LoRes Base ASGM simulation better recreated the IQR of the Hg concentration in the atmosphere, the mean Hg concentration in this simulation was almost two standard deviations away from the mean of the observations. Consequently, we determined that the mean was not a good metric to investigate the relationship between the Hg concentration in the atmosphere and ASGM emissions as modelled by GEOS-Chem. 
+\end{flushleft}
 
-\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/ModelvsObs/Hist_GCbase_vs_GCasgm_vs_obs_v1.png}} &
-\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/ModelvsObs/GCasgm_vsObs_standardized.png}}
+
+
+\begin{figure}[H]
+
+\begin{tabular}[H]{cc}
+
+\subfloat[]{\includegraphics[width = 0.5\linewidth]{templates/figures/ModelvsObs/Histplot_obsVmodel_v1.pdf}} &
+\subfloat[]{\includegraphics[width = 0.5\linewidth]{templates/figures/ModelvsObs/Histplot_std_obsVmodel_v1.pdf}}
 \end{tabular}
 \centering
 \captionof{figure}{Plots Showing Data and Modeling  Results from GMOS Monitoring Network Sites in South America}
@@ -233,51 +301,151 @@ Furthermore, a comparison of the modelled and observed  Hg concentration at CHC 
 \end{figure}
 \FloatBarrier
 
+\begin{flushleft}
+Instead, the IQR and $95^{th}$ percentile range were found to be metrics that were informative about the effect of ASGM on the simulated Hg concentration site at distant high altitude measuring station site. The failure of GEOS-Chem to reproduce the observed mean Hg concentration at a high altitude measuring site may be attributed to poor parameterizations in the model such as the influence of dry deposition. The flaws in the GEOS-Chem Hg dry deposition scheme in version 12.8.1 of GEOS-Chem used in this analysis were discussed in detail and improved in Feinberg et.al (2022). Furthermore, we hypothesized that poor spatial distribution of emissions in the 2015 Hg ASGM emissions inventory which are an input to the GEOS-Chem may have also contributed to the model observation mismatches. The discrepancy in the distribution of emissions is evidence in the comparison of a national inventory of Peruvian ASGM emissions as produced by the Artisanal Gold Council and the emission estimates from the GMA2018 in Table \ref{tab:gamVagc}.
+\end{flushleft}
+
+\begin{table}[H]
+\caption{}
+    \label{tab:gamVagc}
+\begin{tabular}{lcc}
+
+\textbf{Region}        & \textbf{GMA 2018}    & \textbf{Artisanal Gold Counsel}                          \\
+\hline
+Madre de Dios & & \\
+
+Apurimac      & &\\
+
+Arequipa      & & \\
+
+North Puno    & & \\
+
+South Puno    & & \\
+\hline
+\end{tabular}
+\centering
+\end{table}
 
 \begin{comment}
+% \begin{figure}[h]
+%   \includegraphics[scale=0.5]{templates/figures/ModelvsObs/GC_noASGMvsObs.png}
+%   \centering
+%   \caption{Histogram of Hg concentration for model output when the ASGM Hg source is turned off and the observations for the normal period}
+%   \label{fig:GMOS_stations}
+% \end{figure}
+% \FloatBarrier
 
-\begin{figure}[h]
-  \includegraphics[scale=0.5]{templates/figures/ModelvsObs/GC_noASGMvsObs.png}
-  \centering
-  \caption{Histogram of Hg concentration for model output when the ASGM Hg source is turned off and the observations for the normal period}
-  \label{fig:GMOS_stations}
+% \begin{figure}[h]
+%   \includegraphics[scale=0.5]{templates/figures/ModelvsObs/GCasgm_vsObs.png}
+%   \centering
+%   \caption{Histogram of Hg concentration for model output when the ASGM Hg source is turned on and the observations for the normal period}
+%   \label{fig:GMOS_stations}
+% \end{figure}
+% \FloatBarrier
+
+% \begin{figure}[h]
+%   \includegraphics[scale=0.5]{templates/figures/ModelvsObs/Hist_GCbase_vs_GCasgm_vs_obs_v1.png}
+%   \centering
+%   \caption{Histogram of Hg concentration for model output when the ASGM Hg source is turned off (green),when its turn on (blue)and the observations (red) for the normal period}
+%   \label{fig:GMOS_stations}
+% \end{figure}
+% \FloatBarrier
+
+% \begin{figure}[h]
+%   \includegraphics[scale=0.5]{templates/figures/ModelvsObs/GCasgm_vsObs_standardized.png}
+%   \centering
+%   \caption{Histogram of standardized Hg concentration for model output when the ASGM Hg source is turned on (blue) and the observations (red) for the normal period}
+%   \label{fig:GMOS_stations}
+% \end{figure}
+% \FloatBarrier
+
+% \begin{figure}[h]
+%   \includegraphics[scale=0.5]{templates/figures/ModelvsObs/CorrCompare.png}
+%   \centering
+%   \caption{Comparison of correlations between model output and observations}
+%   \label{fig:GMOS_stations}
+% \end{figure}
+% \FloatBarrier
+
+
+\begin{figure}[H]
+
+\begin{tabular}[H]{cc}
+
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/Madre de Dios95th.png}} &
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/South Puno95th.png}}\\
+
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/North Puno95th.png}} &
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/Arequipa95th.png}}\\
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/Apurimac95th.png}}
+\end{tabular}
+\centering
+\captionof{figure}{Sensitivity of Observations to Emission Changes in single grid box when the $95^{th}$ range is used as the metric to compare the observations to model outputs}
+\label{fig:Histplots95th}
 \end{figure}
 \FloatBarrier
 
 \begin{figure}[h]
-  \includegraphics[scale=0.5]{templates/figures/ModelvsObs/GCasgm_vsObs.png}
-  \centering
-  \caption{Histogram of Hg concentration for model output when the ASGM Hg source is turned on and the observations for the normal period}
-  \label{fig:GMOS_stations}
-\end{figure}
-\FloatBarrier
 
-\begin{figure}[h]
-  \includegraphics[scale=0.5]{templates/figures/ModelvsObs/Hist_GCbase_vs_GCasgm_vs_obs_v1.png}
-  \centering
-  \caption{Histogram of Hg concentration for model output when the ASGM Hg source is turned off (green),when its turn on (blue)and the observations (red) for the normal period}
-  \label{fig:GMOS_stations}
-\end{figure}
-\FloatBarrier
+\begin{tabular}[h]{cc}
 
-\begin{figure}[h]
-  \includegraphics[scale=0.5]{templates/figures/ModelvsObs/GCasgm_vsObs_standardized.png}
-  \centering
-  \caption{Histogram of standardized Hg concentration for model output when the ASGM Hg source is turned on (blue) and the observations (red) for the normal period}
-  \label{fig:GMOS_stations}
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/Madre de Diosiqr.png}} &
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/South Punoiqr.png}}\\
+
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/North Punoiqr.png}} &
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/Arequipaiqr.png}}\\
+\subfloat[]{\includegraphics[width = 0.45\linewidth]{templates/figures/GboxSensitivity/Apurimaciqr.png}}
+\end{tabular}
+\centering
+\captionof{figure}{Sensitivity of Observations to Emission Changes in single grid box when the interquartile range (IQR) is used as the metric to compare the observations to model outputs}
+\label{fig:Histplotsiqr}
 \end{figure}
 \FloatBarrier
 \end{comment}
+\subsection{Markov Chain Monte Carlo Simulation }
+\renewcommand{\arraystretch}{2}
+
+    
+\begin{table}[H]
+\caption{Table showing the emission estimates for each of the grid boxes in the case study region when the $95^{th}$ percentile range is used as the metric to compare the model outputs to observations}
+    \label{tab:MCMC_estimates}
+\begin{tabular}{lc}
+
+\textbf{Region}        & \textbf{Emission Estimate}                             \\
+\hline
+Madre de Dios & $16.97^{+21.27}_{-12.27}$ \\
+
+Apurimac      & $14.90^{+16.16}_{-10.53}$\\
+
+Arequipa      & $32.83^{+34.94}_{-24.31}$ \\
+
+North Puno    & $13.44^{+17.51}_{-10.07}$ \\
+
+South Puno    & $06.51^{+7.26}_{-4.72}$ \\
+\hline
+\end{tabular}
+\centering
+\end{table}
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/MCMC/MCMCMCMC_Estimates95th.pdf}
+  \centering
+  \caption{Emission Estimates when the $95^{th}$ percentile range is used as the metric to compare the model outputs to observations }
+  \label{fig:MCMC_estimatesiqr}
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/MCMC/MCMCMCMC_Estimatesiqr.pdf}
+  \centering
+  \caption{Emission Estimates when the IQR is used as the metric to compare the model outputs to observations }
+  \label{fig:MCMC_estimates95}
+\end{figure}
+\FloatBarrier
 \begin{flushleft}
 
 \end{flushleft}
-\begin{figure}[h]
-  \includegraphics[scale=0.5]{templates/figures/ModelvsObs/CorrCompare.png}
-  \centering
-  \caption{Comparison of correlations between model output and observations}
-  \label{fig:GMOS_stations}
-\end{figure}
-\FloatBarrier
+
 
 \section{Policy Implications}
 
