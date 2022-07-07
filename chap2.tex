@@ -23,9 +23,24 @@ Herein we apply top-down techniques to investigate how ASGM Hg emissions can be 
 \begin{flushleft}
 As reported by the GMA 2018, Peru is one of the top emitters of ASGM Hg. Additionally, the Madre de Dios region was estimated to have released the largest quantities of Hg to the environment and the atmosphere[AGC]. This rainforest region lies between Bolivia and Brazil and covers roughly 85,000 square kilometers. The region's name is derived from the name of a major river that runs through it, and smaller streams and rivers cross through it to provide transportation and fishing for indigenous communities. In addition, these waterways are the main sites of ASGM and, subsequently, Hg contamination. 
 \end{flushleft}
+\begin{figure}[H]
+  \includegraphics[width=0.8\textwidth]{templates/figures/Total_HG_emissions_in_World.pdf}
+  \centering
+  \caption{Map Total Emissions from all sources in the World}
+  \label{fig:World_Hg_em}
+\end{figure}
+\FloatBarrier
 \begin{flushleft}
 Although Brazil nut, coffee, papaya, and cacao are cultivated, the land is primarily dominated by ASGM (Diringer et al., 2015, Caballero Espejo et al., 2018). (Diringer et al., 2015) estimate that ASGM land has increased by 400\% since 1999. As a result, 100,000 hectares of forest have been deforested, with 10\% occurring only in 2017 (Caballero Espejo et al., 2018). Researchers have found it difficult to verify the amount of hg imported and gold extracted from Madre de Dios (Cortés-McPherson, 2019, Swenson et al., 2011, Veiga et al., 2006) and the number of illegal miners, which Mr. Brack-Egg estimated in 2010 at 30,000 (Diringer et al., 2015, MINAM 2011, Swenson et al., 2011). It is estimated that around 180 tons of Hg enter the environment of Madre de Dios every year (MongoBay Latam, 2018, Servindi, 2018). However, these numbers are not very accurate and are, in part, contradictory. 
 \end{flushleft}
+\begin{figure}[H]
+  \includegraphics[width=0.8\textwidth]{templates/figures/Total_HG_emissions_in_Latam.pdf}
+  \centering
+  \caption{Map Total Emissions from all sources in South America}
+  \label{fig:Latam_Hg_em}
+\end{figure}
+\FloatBarrier
+
 \begin{flushleft}
 Hg has been extensively studied in Madre de Dios, both in people and in the environment. Prior environmental measurements performed in Madre de Dios regarding the amount of Hg entering soil, air, and waterways reflected drastically different results between government estimates and international researchers. This demonstrates a need to generate further system-wide constraints on ASGM Hg use and pollution. Some studies focus on human health in the region (Gibb \& O'Leary, 2014), and others have bridged natural science perspectives with community engagement and trans-disciplinary approaches (Landon et al., 2015). Through leveraging national and global emission inventories, long-range measurements of Hg concentration in the atmosphere, and the GEOS-Chem Chemical Transport Model, this project complements previous studies and distinguishes itself from previous studies in this highly-studied region. Results will be generated for the Madre de Dios region and its surrounding areas that have high ASGM activity. 
 \end{flushleft}
@@ -172,24 +187,41 @@ Initial results, as seen in Figure \ref{fig:GMOSvsGC} indicated that the ASGM em
 \FloatBarrier
 
 % Place table showing summary of predicted ASGM contribution at the GMOS sites
-\begin{table}[H]
-\captionof{table}{The annual average ASGM contribution at the respective GMOS Hg monitoring sites as predicted by the GEOS-Chem model  }
-\label{tab:ASGM_at_GMOS_annual_avs}
-\begin{tabular}{lSS}
+% \begin{table}[H]
+% \captionof{table}{The annual average ASGM contribution at the respective GMOS Hg monitoring sites as predicted by the GEOS-Chem model  }
+% \label{tab:ASGM_at_GMOS_annual_avs}
+% \begin{tabular*}{ \textwidth}{lSSSSS}
 
-\textbf{GMOS Site}  & \textbf{Annual Average Hg\textsuperscript{0}} &       \\
-\textbf{Data Type}  & \textbf{Concentration (ng m$^{-3}$)}          &\textbf{$\sigma$} \\
+% GMOS Site  & Observed  Hg\textsuperscript{0} & Observation      & Base(ASGM=ON)  Hg\textsuperscript{0} & Base(ASGM=ON)  & ASGM Contribution  Hg\textsuperscript{0}   \\
+% Data Type  & (ng m$^{-3}$)/year             & $\sigma$          &  (ng m$^{-3}$)/year                   & $\sigma$      &(ng m$^{-3}$)/year\\
                         
-\hline
-Chalcataya ASGM Contribution     &   0.28  & 0.11 \\
-Sisal ASGM Contribution          &   0.11 &  0.02 \\
-Niew Nickerie ASGM Contribution  &  0.25  & 0.04  \\
-Manaus ASGM Contribution         &   0.21 &  0.03 \\
-Calhau ASGM Contribution         &   0.11  & 0.01  \\
-Bariloche ASGM Contribution      &   0.05 &  0.01  \\
+% \hline
+% Chalcataya      & & & &  0.28   \\
+% Sisal           & & & &  0.11  \\
+% Niew Nickerie   & & & & 0.25    \\
+% Manaus          & & & &  0.21  \\
+% Calhau          & & & &  0.11    \\
+% Bariloche       & & & &  0.05   \\
+% \end{tabular*}
+% \centering
+% \end{table}
+\begin{figure}[H]
+
+\begin{tabular}[H]{cc}
+\setlength{\tabcolsep}{2.5pt}
+
+\subfloat[Chalcataya]{\includegraphics[width = 0.3\linewidth]{templates/figures/GMOS_Sites/chc.png}} &
+\subfloat[Sisal]{\includegraphics[width = 0.3\linewidth]{templates/figures/GMOS_Sites/sis.png}}\\
+
+\subfloat[Niew Nickerie]{\includegraphics[width = 0.3\linewidth]{templates/figures/GMOS_Sites/NIk.png}} &
+\subfloat[Manaus]{\includegraphics[width = 0.3\linewidth]{templates/figures/GMOS_Sites/man.png}}\\
+\subfloat[Calhau]{\includegraphics[width = 0.3\linewidth]{templates/figures/GMOS_Sites/cal.png}}
 \end{tabular}
 \centering
-\end{table}
+\captionof{figure}{Sensitivity of Observations to Emission Changes in single grid box when the interquartile range (IQR) is used as the metric to compare the observations to model outputs}
+\label{fig:Histplotsiqr}
+\end{figure}
+\FloatBarrier
 \subsection{Observed Hg Concentration at CHC}
 \begin{flushleft}
 The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown on Figure\ref{fig:ObsTseries}. The characteristics of the observations over this measurement period were described in Koening et all,(2020). As shown by the 120 day moving average plot on Figure\ref{fig:ObsTseries}, we found that the observed TGM concentration in the atmosphere had a visible upward trend, which Koening et all, assert was due to the El Niño-Southern Oscillation (ENSO). Consequently, they categorized the Hg concentrations in the atmosphere at the CHC site into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. The meteorology associated with ENSO was not accounted for in the GEOS-Chem Hg model hence the GEOS-Chem simulated Hg concentration at CHC was compared to the observed Hg concentration under normal conditions.
