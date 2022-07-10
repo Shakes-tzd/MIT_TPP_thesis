@@ -187,24 +187,29 @@ Initial results, as seen in Figure \ref{fig:GMOSvsGC} indicated that the ASGM em
 \FloatBarrier
 
 % Place table showing summary of predicted ASGM contribution at the GMOS sites
-% \begin{table}[H]
-% \captionof{table}{The annual average ASGM contribution at the respective GMOS Hg monitoring sites as predicted by the GEOS-Chem model  }
-% \label{tab:ASGM_at_GMOS_annual_avs}
-% \begin{tabular*}{ \textwidth}{lSSSSS}
 
-% GMOS Site  & Observed  Hg\textsuperscript{0} & Observation      & Base(ASGM=ON)  Hg\textsuperscript{0} & Base(ASGM=ON)  & ASGM Contribution  Hg\textsuperscript{0}   \\
-% Data Type  & (ng m$^{-3}$)/year             & $\sigma$          &  (ng m$^{-3}$)/year                   & $\sigma$      &(ng m$^{-3}$)/year\\
+\begin{table}[H]
+\captionof{table}{The annual average ASGM contribution at the respective GMOS Hg monitoring sites as predicted by the GEOS-Chem model  }
+\label{tab:ASGM_at_GMOS_annual_avs}
+
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{lcccccc}
+  \hline
+
+GMOS Site &Number of& Observed Hg\textsuperscript{0} & Observation Standard & Base(ASGM=ON) Hg\textsuperscript{0} & Base(ASGM=ON) Standard  & ASGM Contribution  Hg\textsuperscript{0}   \\
+Data Type & Records & (ng m$^{-3}$)/year             & Deviation ($\sigma$) & (ng m$^{-3}$)/year                   & Deviation ($\sigma$)      &(ng m$^{-3}$)/year\\
                         
-% \hline
-% Chalcataya      & & & &  0.28   \\
-% Sisal           & & & &  0.11  \\
-% Niew Nickerie   & & & & 0.25    \\
-% Manaus          & & & &  0.21  \\
-% Calhau          & & & &  0.11    \\
-% Bariloche       & & & &  0.05   \\
-% \end{tabular*}
-% \centering
-% \end{table}
+\hline
+Chalcataya     &333 &0.90 & 0.16 & 1.20 & 0.16   &0.28   \\
+Sisal          & 320 &1.19 & 0.14 & 1.27 & 0.05 & 0.12  \\
+Niew Nickerie  & 215 &1.11 & 0.23 & 1.41 & 0.06 & 0.25    \\
+Calhau         & 309 &1.22 & 0.12 & 1.30 & 0.04 & 0.11  \\
+Manaus        & 100 &1.49  & 0.31 & 1.27 & 0.09 & 0.23   \\
+  \hline
+\end{tabular}}
+
+\end{table}
+
 \begin{figure}[H]
 
 \begin{tabular}[H]{cc}
@@ -254,18 +259,19 @@ The time series of the observed concentration at the CHC station between July 20
 \setlength{\tabcolsep}{2.5pt}
 \begin{table}[H]
   \begin{center}
-    \caption{Characteristics of observed and modelled Hg concentration in CHC}
+    \caption{Characteristics of observed and modelled Hg concentration in CHC where$\mu$ is the annual average Hg concentration, $\sigma$ is the standard deviation, $iqr$ is the interquartile range, $r_s$ is the Spearman correlation, $r$ is the Pearson correlation and $R^2$ is the coeeficient of determination}
     \label{tab:ModelvsObsStats}
-    \begin{tabular}{lSSSSSS}
+    \begin{tabular}{lcccccc}
        %<-- added & and content for each column
       
-     & \textbf{$mean$}  & \textbf{$\sigma$}& \textbf{$iqr$} & & & \\
-     \cmidrule{2-5}
-     Observations & 0.90  & 0.148 & 0.157 &  & & \\
-     \textbf{Simulations} &  & & &\textbf{$r_s$} &\textbf{$r$} &\textbf{$R^2$}\\ %
+                          & $\mu$                 & $\sigma$            & $iqr$               & & & \\
+                          &  (ng m$^{-3}$)/year)  & (ng m$^{-3}$)/year) & (ng m$^{-3}$)/year) & & & \\
+     \cmidrule{2-4}
+     Observations         & 0.90             & 0.16            & 0.18        &  & & \\
+     \textbf{Simulations} &                  &                  &               &\textbf{$r_s$} &\textbf{$r$} &\textbf{$R^2$}\\ %
       \hline
-      Base (ASGM=OFF) & 0.91  & 0.063 & 0.101 & 0.163 & 0.140 & 0.0196\\ 
-      Base (ASGM=ON) & 1.16  & 0.138& 0.198 & 0.124 & 0.101 & 0.0102\\ % <--
+      Base (ASGM=OFF)     & 0.91             & 0.06            & 0.11         & 0.17         & 0.144      & 0.0196\\ 
+      Base (ASGM=ON)      & 1.16            & 0.14            & 0.20        & 0.124         & 0.101       & 0.0102\\ % <--
     \end{tabular}
   \end{center}
 \end{table}
