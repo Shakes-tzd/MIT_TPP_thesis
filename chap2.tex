@@ -56,30 +56,30 @@ Hg has been extensively studied in Madre de Dios, both in people and in the envi
 To develop a comprehensive understanding of how Hg pollution impacts the environment, long-term monitoring of ambient mercury data on a global scale is vital to assessing its emission, transportation, atmospheric chemistry, and deposition processes. In South America, especially in tropical regions, atmospheric mercury (Hg) data are rare; hence mercury dynamics are not well understood. The Global Mercury Observation System (GMOS) is one of only a few major global projects that aim to develop a standardized, coordinated global observing system for mercury pollution across the globe. Funded by the European Union, it comprises a vast network of ground-based monitoring stations, regular oceanographic cruises, and measurements in the lower and upper tropospheres and the lower stratosphere[cite]. More than 40 ground-based monitoring sites constitute the international network, covering many regions with limited to no observational data available before GMOS[cite]. Figure \ref{fig:GMOS_stations_map} shows the GMOS monitoring network sites in South America. Available Hg observation data from the GMOS stations on Figure \ref{fig:GMOS_stations} was obtained from the GMOS online database as well as published studies on the different sites. Atmospheric total gaseous mercury (TGM) data was  measured at these different stations using a Tekran analyzers (Tekran Inc., Toronto, Canada). 
 \end{flushleft}
 
-% \begin{figure}[H]
-%   \includegraphics[width=0.8\textwidth]{templates/figures/GMOS_Sites/GMOS_map.pdf}
-%   \caption{Map Showing the GMOS Monitoring Network Sites in South America}
-%   \label{fig:GMOS_stations_map}
-%   \centering
-  
-% \end{figure}
-% \FloatBarrier
-
 \begin{figure}[H]
-
-\begin{tabular}[H]{cc}
-
-\subfloat[Map Showing the GMOS Monitoring Network Sites in South America]{\includegraphics[width = 0.5\linewidth]{templates/figures/GMOS_Sites/GMOS_map.pdf}} &
-\subfloat[GEOS Chem Grid]{\includegraphics[width = 0.45\linewidth]{templates/figures/Passive_Samplers/Latam_Passive_SamplerSites.pdf}}\\
-
-
-\end{tabular}
+  \includegraphics[width=0.8\textwidth]{templates/figures/Passive_Samplers/Latam_Passive_SamplerSites.pdf}
+  \caption{Map Showing the GMOS Monitoring Network Sites and Passive Sampler Locations in South America}
+  \label{fig:GMOS_stations_map}
+  \centering
   
-\centering
-\captionof{figure}{Map showing how the GMA2018 emission estimates for the year 2015 were distributed in Peru }
-\label{fig:LatamHgMonitoring}
 \end{figure}
 \FloatBarrier
+
+% \begin{figure}[H]
+
+% \begin{tabular}[H]{cc}
+
+% \subfloat[Map Showing the GMOS Monitoring Network Sites in South America]{\includegraphics[width = 0.5\linewidth]{templates/figures/GMOS_Sites/GMOS_map.pdf}} &
+% \subfloat[GEOS Chem Grid]{\includegraphics[width = 0.45\linewidth]{templates/figures/Passive_Samplers/Latam_Passive_SamplerSites.pdf}}\\
+
+
+% \end{tabular}
+  
+% \centering
+% \captionof{figure}{Map showing how the GMA2018 emission estimates for the year 2015 were distributed in Peru }
+% \label{fig:LatamHgMonitoring}
+% \end{figure}
+% \FloatBarrier
 
 \subsection{GEOS-Chem}
 \begin{flushleft}
@@ -161,9 +161,8 @@ For each grid box in the case study region, the emissions were modified from the
 
 
 \section{Results and Discussion}
+\subsection{GMOS Observations vs GEOS-Chem}
 \begin{flushleft}
-
-
 Initial results, as seen in Figure \ref{fig:GMOSvsGC} indicated that the ASGM emissions related Hg concentration signal created by the GEOS-Chem model is prominent in only one of the GMOS sites during the measurement periods we compared to the GEOS-Chem simulation. The site that had a prominent ASGM  is mountain site at the Chalcataya (CHC) regional station, Figure \ref{fig:GMOSvsGC} (a), (World Meteorological Organization, WMO, region III-- South America; 16.35023◦ S, 68.13143◦ W),which is at an altitude of 5240 meters above sea level, about 140m below the summit of mount Chacaltaya on the eastern edge of the ``Cordillera Real,'' with a horizon open to the south and west. CHC is about 300km from the ``Madre de Dios'' watershed. We conducted further analysis of the extent to which the GEOS-Chem model reproduces the observed concentrations based on the data from the CHC site. Moreover, comparing the GEOS-Chem modeled concentrations to the CHC site was pertinent because it is also the site closest to the case study region. 
 \end{flushleft}
 
@@ -217,11 +216,11 @@ GMOS Site &Number of& Observed Hg\textsuperscript{0} & Observation Standard & Ba
 Data Type & Records & (ng m$^{-3}$)/year             & Deviation ($\sigma$) & (ng m$^{-3}$)/year                   & Deviation ($\sigma$)      &(ng m$^{-3}$)/year\\
                         
 \hline
-Chalcataya     &333 &0.90 & 0.16 & 1.20 & 0.16   &0.28   \\
 Sisal          & 320 &1.19 & 0.14 & 1.27 & 0.05 & 0.12  \\
-Niew Nickerie  & 215 &1.11 & 0.23 & 1.41 & 0.06 & 0.25    \\
 Calhau         & 309 &1.22 & 0.12 & 1.30 & 0.04 & 0.11  \\
+Niew Nickerie  & 215 &1.11 & 0.23 & 1.41 & 0.06 & 0.25    \\
 Manaus        & 100 &1.49  & 0.31 & 1.27 & 0.09 & 0.23   \\
+Chalcataya     &333 &0.90 & 0.16 & 1.20 & 0.16   &0.28   \\
   \hline
 \end{tabular}}
 
@@ -244,6 +243,25 @@ Manaus        & 100 &1.49  & 0.31 & 1.27 & 0.09 & 0.23   \\
 \label{fig:Histplotsiqr}
 \end{figure}
 \FloatBarrier
+\subsection{Passive Sampler Observations vs GEOS-Chem}
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/Passive_Samplers/Passive Sampler vs Model.png}
+  \caption{How the predicted }
+  \label{fig:PassiveSamplerVSgeosChem_latitude}
+  \centering
+  
+\end{figure}
+\FloatBarrier
+
+\begin{figure}[H]
+  \includegraphics[width=0.8\textwidth]{templates/figures/Passive_Samplers/Passive Sampler vs Model Latitude.png}
+  \caption{Map Showing the GMOS Monitoring Network Sites and Passive Sampler Locations in South America}
+  \label{fig:Passive Samplers vs GC}
+  \centering
+  
+\end{figure}
+\FloatBarrier
+
 \subsection{Observed Hg Concentration at CHC}
 \begin{flushleft}
 The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown on Figure\ref{fig:ObsTseries}. The characteristics of the observations over this measurement period were described in Koening et all,(2020). As shown by the 120 day moving average plot on Figure\ref{fig:ObsTseries}, we found that the observed TGM concentration in the atmosphere had a visible upward trend, which Koening et all, assert was due to the El Niño-Southern Oscillation (ENSO). Consequently, they categorized the Hg concentrations in the atmosphere at the CHC site into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. The meteorology associated with ENSO was not accounted for in the GEOS-Chem Hg model hence the GEOS-Chem simulated Hg concentration at CHC was compared to the observed Hg concentration under normal conditions.
