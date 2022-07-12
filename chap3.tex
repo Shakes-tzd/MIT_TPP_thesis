@@ -6,6 +6,74 @@ high Hg emission ASGM Hg emissions can be estimated by leveraging simulations of
 \section{Methods}
 
 \subsection{Modification of Mercury Inventories}
+\begin{flushleft}
+The GEOS-Chem Hg model takes the emissions inventory such as those shown on Figure \ref{fig:Hg_inventories} as an input and output the Hg concentration in the atmosphere that results from the input emissions. Moreover, the Hg concentration output is directly proportional to the amount of input emissions. 
+\end{flushleft}
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/Peru_Maps/Hg_inventories.pdf}
+  \centering
+  \caption{Comparison of different Hg emission estimates by different global inventories}
+  \label{fig:Hg_inventories}
+  
+\end{figure}
+\FloatBarrier
+\begin{flushleft}
+The GMA 2018 ASGM emissions estimates for the year 2015 were used in the all the GEOS-Chem simulations we carried out. The  from individual grid boxes in the case study region as seen in Figure \ref{fig:GMA2018} were scaled and then used as input to the GEOS-Chem model. The emissions were scaled to investigate the relationship between the Hg concentration in the atmosphere and the changes in ASGM emissions from the case study region in Peru. Moreover, the Hg concentration signal resulting from scaling the emissions from a particular grid box was calculated using Equation \ref{doublingSig} below:
+\end{flushleft}
+
+\begin{flushleft}
+\begin{equation}
+\label{doublingSig}
+Hg_{sig(region)}=\small\frac{(Hg_{m_1} -Hg_{m_0})}{(m_1 -m_0)}
+\end{equation}
+where:
+\end{flushleft}
+
+\begin{description}[leftmargin=!,labelwidth={3 em}]
+    \item [$region$] is the specific department within the case study region.
+    \item [$Hg_{m_1}$] is the Hg concentration signal at the observation site caused by scaling the emissions from a single grid box. 
+    \item [$Hg_{m_0}$] is the baseline Hg concentration signal at the observation site when ASGM emissions are turned on in the GEOS-Chem simulation.
+    \item [$m_1$] is the quantity of emissions in metric tonnes after scaling the emissions from a specific grid box.
+\end{description}
+
+
+\begin{flushleft}
+$Hg_{sig(region)}$ gives the Hg concentration signal in the atmosphere that results from a unit change in the the tonnes of emissions from a specific grid box. Therefore, $Hg_{sig(region)}$ was used to investigate the sensitivity of the observations to the different amounts of additional ASGM Hg emissions and the regional grid boxes. The Hg concentration in the atmosphere that results from a specific change in emissions from a particular grid box was calculated using Equation \ref{ysignal} below.
+\begin{equation}
+\label{ysignal}
+\small{Hg_{m(region)}} =Hg_{sig(region)}(m-m_o), 
+\end{equation}
+where:
+\end{flushleft}
+
+
+\begin{description}[leftmargin=!,labelwidth={1.5 em}]
+    
+    \item [$m_0$] is the GMA 2018 ASGM emissions estimate in metric tonnes for the particular grid box corresponding to a place in the case study region
+    
+    \item [$m$] is the amount of emissions, in metric tonnes, from a grid box required to produce $Hg_{m}$ concentration in the atmosphere
+\end{description}
+
+\begin{figure}[H]
+
+\begin{tabular}[H]{cc}
+
+\subfloat[GMA 2015 Grid]{\includegraphics[width = 0.45\linewidth]{templates/figures/Peru_Maps/GMA2018inventory025x025.pdf}} &
+\subfloat[GEOS Chem Grid]{\includegraphics[width = 0.45\linewidth]{templates/figures/Peru_Maps/GMA2018inventory2x25.pdf}}\\
+
+
+\end{tabular}
+  
+\centering
+\captionof{figure}{Map showing how the GMA2018 emission estimates for the year 2015 were distributed in Peru }
+\label{fig:GMA2018}
+\end{figure}
+\FloatBarrier
+
+
+\begin{flushleft}
+For each grid box in the case study region, the emissions were modified from their original GMA 2018 estimates to new values based on Hg emission estimates produced by the Artisanal Gold Council(AGC)
+\end{flushleft}
 
 \subsection{Markov Chain Monte Carlo}
 
