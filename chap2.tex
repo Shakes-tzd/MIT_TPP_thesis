@@ -4,12 +4,14 @@
 %% You can process specific files by typing their names in at the 
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
+%% prompt when you run the file main.tex through LaTeX.
 \chapter{Predicting Mercury Concentrations in the Atmosphere in Latin America using GEOS-Chem }
+%% BACKGROUND
 \section{Background}
 \begin{flushleft}
 Anthropogenic Hg sources, including ASGM, have been quantified in numerous prior studies using different methodologies. Bottom-up estimates leverage collected data on underlying activities and multiply activity levels by emission factors to estimate regional and global totals. For instance, Figure \ref{fig:World_Hg_em} shows the most recent estimated spatial distribution of anthropogenic Hg emissions as reported in the 2018 Global Mercury Assessment, which also estimated ASGM Hg emissions to be 838 tonnes with an uncertainty range of 675-1000 tonnes for 2015\cite{united_nations_environment_programme_technical_2019}. Moreover, Streets et al. (2019) tested six different proxies for scaling emissions to other years and used an average value to scale the inventory of emissions to the year 2015 thus estimating that ASGM was the largest source and responsible for 775 Mg of emissions\cite{streets_global_2019}. Furthermore, Muntean et al. (2014) found that poverty in  gold ore rich countries (as measured by the GINI index \cite{sadefo_kamdem_nice_2012}, where available) was correlated with data on ASGM production activity when they used a poverty-based approach to estimate that ASGM was responsible for 728.27 t of emissions in 2010 which was equivalent to 41.1\% of the global emissions\cite{muntean_evaluating_2018}. Such inventories are comprehensible, and their universal applicability enables worldwide coverage. However, the different assumptions on the activity data and emission factors induce significant uncertainty in the emission inventories. An additional bias in the bottom-up approach originates from the reliance on officially reported emissions data, which might cause differences in accuracy between countries and regions.
 \begin{figure}[H]
-  \includegraphics[width=0.8\textwidth]{templates/figures/Total_HG_emissions_in_World.pdf}
+  \includegraphics[width=0.8\textwidth]{templates/figures/06-12-22_total_Hg0-emissions-per-year_globally_001.pdf}
   \centering
   \caption{Spatial distribution of annual average Hg anthropogenic emissions for a 1 year period between July 2014 and July 2015}
   \label{fig:World_Hg_em}
@@ -25,10 +27,12 @@ On the contrary, top-down emission estimation approaches combine atmospheric tra
 Herein we investigate the extent to which the GEOS-Chem model predicts the Hg concentrations in the atmosphere in regions with high ASGM activities such as the tropical regions of the world. Figure \ref{fig:World_Hg_em} leverages the most recent emission estimates of Hg emissions globally and it shows that regions such as South America, Africa, South East ASIA and China are the sources of the highest Hg anthropogenic emissions. The estimates from the GMA 18 further attribute the high Hg emission from South America and Africa to ASGM activities\cite{united_nations_environment_programme_technical_2019}. To our knowledge, there is a dearth of scientific studies investigating the extent to which models such as GEOS-Chem reproduce observed Hg concentrations in the atmosphere. The highly cited fact that that perpetuates the absence of such studies is the lack of monitoring data that researcher could use in modelling studies. However, the GMOS network has about 5 monitoring stations in Latin America whose data can be compared to modelling results. Moreover, the Wania Grouped deployed numerous passive air samplers (PAS)  in different locations across Latin America to monitor Hg concentration in the atmosphere thus providing data that can be compared to model outputs.Therefore, we compare the modelled Hg concentrations in the atmosphere to observed concentrations assess the GEOS-Chem models strengths and short comings in reproducing the observed Hg concentrations in the atmosphere. 
 \end{flushleft}
 
+%%----------------------------METHODS-------------------------------------------
 \section{Methods}
+
 \subsection{Case Study Region}
 \begin{figure}[H]
-  \includegraphics[width=0.8\textwidth]{templates/figures/Total_HG_emissions_in_Latam.pdf}
+  \includegraphics[width=0.8\textwidth]{templates/figures/06-12-22_total_Hg0-emissions-per-year_in_latam_001.pdf}
   \centering
   \caption{Map showing the spatial distribution of the average Hg anthropogenic emissions in South America}
   \label{fig:Latam_Hg_em}
@@ -82,7 +86,7 @@ Herein we simulated the Hg concentration in the atmosphere using version 12.8.0 
 
 
 
-
+%%----------------------------RESULTS AND DISCUSSION---------------------------
 \section{Results and Discussion}
 \subsection{GMOS Observations vs GEOS-Chem}
 \begin{flushleft}
@@ -172,23 +176,23 @@ Chalcataya     &33.33 &-12.5   \\
 % \FloatBarrier
 \subsection{Passive Sampler Observations vs GEOS-Chem}
 \begin{flushleft}
- The comparison between the modelled concentration in the atmosphere and the PAS data corroborated the finding that the GEOS-Chem model overestimated the observed concentrations in the atmosphere as seen on Figure \ref{fig:Passive Samplers vs GC}. Moreover the PAS observations show high variability between the south and northern locations in South America while the modeled concentrations have a low concentration. 
+ The comparison between the modelled concentration in the atmosphere and the PAS data corroborated the finding that the GEOS-Chem model overestimated the observed concentrations in the atmosphere as seen on Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001}. Moreover the PAS observations show high variability between the south and northern locations in South America while the modeled concentrations have a low concentration. 
 \end{flushleft}
 
 
 \begin{figure}[H]
-  \includegraphics[width=\textwidth]{templates/figures/Passive_Samplers/Passive Sampler vs Model Latitude.pdf}
+  \includegraphics[width=\textwidth]{templates/figures/Passive_Samplers/06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001.pdf}
   \caption{Map Showing the GMOS Monitoring Network Sites and Passive Sampler Locations in South America}
-  \label{fig:Passive Samplers vs GC}
+  \label{fig:06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001}
   \centering
   
 \end{figure}
 \FloatBarrier
 
 \begin{figure}[H]
-  \includegraphics[width=0.7\textwidth]{templates/figures/Passive_Samplers/Passive Sampler vs Model.pdf}
+  \includegraphics[width=0.7\textwidth]{templates/figures/Passive_Samplers/06-12-22_pas_vs_model_Hg0-per-year_001.pdf}
   \caption{How the predicted average annual HG concentration compares with   }
-  \label{fig:PassiveSamplerVSgeosChem_latitude}
+  \label{fig:06-12-22_pas_vs_model_Hg0-per-year_001}
   \centering
   
 \end{figure}
