@@ -1,4 +1,4 @@
-﻿Site,GEM_Concentration(ng-m-3),Error,Latitude,Longitude,geometry,gc_coord_lat,gc_coord_lon,gc_lon-lat
+﻿Site,GEM_Concentration(ng-m-3),Error,Latitude,Longitude,geometry,gc_coord_lat,gc_coord_lon,gc_lon_lat
 Abangares,6.03,0.3618,10.2875,-84.95555556,POINT (-84.95555555555556 10.2875),10,-85,"[10,-85]"
 "Abrolhos (Redonda Island), BA",0.96,0.0192,-18.13166667,-38.79777778,POINT (-38.79777777777777 -18.13166666666666),-18,-37.5,"[-18,-37.5]"
 "Amazonía, Leticia",0.99,0.0891,-4.191527778,-69.93944444,POINT (-69.93944444444445 -4.191527777777778),-4,-70,"[-4,-70]"
