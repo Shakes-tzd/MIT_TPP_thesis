@@ -36,7 +36,7 @@ Herein we investigate the extent to which the GEOS-Chem model predicts the Hg co
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{templates/figures/07-14-22_gma2018_top-asgm-emmiting-countries.pdf}
   \centering
-  \caption{Bar chart showing the GMA 2018 ASGM Hg\textsuperscript{0} emission estimates for all countries in the world that have estimated ASGM Hg\textsuperscript{0} emissions above 1 Mg. The red bars indicate countries in Latin or South America }
+  \caption{Bar chart showing the GMA 2018 ASGM \hg emission estimates for all countries in the world that have estimated ASGM \hg emissions above 1 Mg. The red bars indicate countries in Latin or South America }
   \label{fig:Latam_Hg_em}
 \end{figure}
 \FloatBarrier
@@ -202,20 +202,20 @@ Chalcataya     &33.33 &-12.5   \\
 
 \subsection{Observed Hg Concentration at CHC}
 \begin{flushleft}
-The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown on Figure\ref{fig:ObsTseries}. The characteristics of the observations over this measurement period were described in Koening et all,(2020). As shown by the 120 day moving average plot on Figure\ref{fig:ObsTseries}, we found that the observed TGM concentration in the atmosphere had a visible upward trend, which Koening et all, assert was due to the El Niño-Southern Oscillation (ENSO). Consequently, they categorized the Hg concentrations in the atmosphere at the CHC site into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. The meteorology associated with ENSO was not accounted for in the GEOS-Chem Hg model hence the GEOS-Chem simulated Hg concentration at CHC was compared to the observed Hg concentration under normal conditions.
+The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown on Figure\ref{fig:ObsTseries}. The detailed characteristics of the observations over this measurement period were described in Koening et al.,(2020); hence we will focus the analysis on using the observation TGM data to evaluate the performance of the GEOS-Chem model in predicting the \hg concentration based on the input \hg emission inventories. As shown by the plot of the \hg 120 day moving as a function of time on Figure\ref{fig:ObsTseries}, we found that the observed TGM concentration in the atmosphere had a visible upward trend, which Koening et al.,(2020) attribute to the El Niño-Southern Oscillation (ENSO). Consequently, Koening et al.,(2020) categorized the measured TGM concentrations in the atmosphere at the CHC site into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. The meteorology associated with ENSO was not accounted for in the GEOS-Chem \hg simulations we conducted; therefore the simulated \hg concentration at CHC was compared to the TGM observations for the one year period between 2014-07-02 to 2015-07-02.
 \end{flushleft}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/ObsTimeSeries.pdf}
  
-  \caption{The measured TGM concentration at CHC over the period from July 2014 to January 2016}
+  \caption{The average daily TGM concentration at CHC in ngm\textsuperscript{-3} as a function of time over the measurement period from July 2014 to January 2016. The daily average concentration in indicated by the red line while the grey line shows the 120 day moving average which clearly highlights the upward trend in the daily averages}
   \label{fig:ObsTseries}
   \centering
 \end{figure}
 \FloatBarrier
 
 \begin{flushleft}
- The comparison between the observed and modelled Hg concentrations at CHC are shown on Figure \ref{fig:ModelvsObsNstats}. We found that the observed Hg concentration at CHC had an mean of 0.90 $ngm^{-3}$, which was only reproduced by the low resolution baseline GEOS-Chem simulation where global ASGM emission were turned off (LoRes Base No ASGM) shown by the green line plot. On the contrary, the low resolution baseline GEOS-Chem simulation where global ASGM emission were turned on (LoRes Base ASGM) shown by the blue line plot overestimated the mean by 29\%.
+  Figure \ref{fig:ModelvsObsNstats} the detailed comparison between the simulated \hg concentration and  We found that the observed TGM concentration at CHC had an mean of 0.90 ngm$^{-3}$, which was within 1\% of the mean of the (Base ASGM= OFF) simulation shown by the green line plot on Figure \ref{fig:ModelvsObsNstats}. On the contrary, the low resolution baseline GEOS-Chem simulation where global ASGM emission were turned on (LoRes Base ASGM) shown by the blue line plot overestimated the mean by 29\%.
 \end{flushleft}
 
 
