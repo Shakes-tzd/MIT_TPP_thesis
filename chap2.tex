@@ -9,6 +9,8 @@
 %% BACKGROUND
 \section{Background}
 \begin{flushleft}
+Comparing models to observation data is essential to validate the predictions made by the models as well as offer insights on how to improve the models[cite]. Models and observation networks have a symbiotic relationship. For instance, observation networks have limited spatial and temporal coverage hence yet models can product information about the state of various locations at once. Consequently
+
 Anthropogenic Hg sources, including ASGM, have been quantified in numerous prior studies using different methodologies. Bottom-up estimates leverage collected data on underlying activities and multiply activity levels by emission factors to estimate regional and global totals. For instance, Figure \ref{fig:World_Hg_em} shows the most recent estimated spatial distribution of anthropogenic Hg emissions as reported in the 2018 Global Mercury Assessment, which also estimated ASGM Hg emissions to be 838 tonnes with an uncertainty range of 675-1000 tonnes for 2015\cite{united_nations_environment_programme_technical_2019}. Moreover, Streets et al. (2019) tested six different proxies for scaling emissions to other years and used an average value to scale the inventory of emissions to the year 2015 thus estimating that ASGM was the largest source and responsible for 775 Mg of emissions\cite{streets_global_2019}. Furthermore, Muntean et al. (2014) found that poverty in  gold ore rich countries (as measured by the GINI index \cite{sadefo_kamdem_nice_2012}, where available) was correlated with data on ASGM production activity when they used a poverty-based approach to estimate that ASGM was responsible for 728.27 t of emissions in 2010 which was equivalent to 41.1\% of the global emissions\cite{muntean_evaluating_2018}. Such inventories are comprehensible, and their universal applicability enables worldwide coverage. However, the different assumptions on the activity data and emission factors induce significant uncertainty in the emission inventories. An additional bias in the bottom-up approach originates from the reliance on officially reported emissions data, which might cause differences in accuracy between countries and regions.
 \begin{figure}[H]
   \includegraphics[width=0.8\textwidth]{templates/figures/06-12-22_total_Hg0-emissions-per-year_globally_001.pdf}
@@ -95,7 +97,7 @@ Figure \ref{fig:GMOSvsGC} shows the average daily Hg concentration at the GMOS s
 
 
 \begin{figure}[H]
-\includegraphics[width=0.8\textwidth]{templates/figures/GMOS_Sites/GMOS_Sites.pdf}
+\includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/GMOS_Sites.pdf}
 \centering
 \captionof{figure}{Plots time series plots of the observed TGM concentrations at different GMOS sites in red with the corresponding modeled concentration in blue and the associated ASGM contribution in black}
 \label{fig:GMOSvsGC}
@@ -258,8 +260,8 @@ The relationship between the mean and variance in the observed and modeled Hg co
 
 \begin{tabular}[H]{cc}
 
-\subfloat[]{\includegraphics[width = 0.5\linewidth]{templates/figures/ModelvsObs/Histplot_obsVmodel_v1.pdf}} &
-\subfloat[]{\includegraphics[width = 0.5\linewidth]{templates/figures/ModelvsObs/Histplot_std_obsVmodel_v1.pdf}}
+\subfloat[]{\includegraphics[width = 0.5\linewidth]{templates/figures/ModelvsObs/06-12-22_models_vs_observations_density-plot.pdf}} &
+\subfloat[]{\includegraphics[width = 0.5\linewidth]{templates/figures/ModelvsObs/06-12-22_models_vs_observations_density-plot_std.pdf}}
 \end{tabular}
 \centering
 \captionof{figure}{Plots Showing Data and Modeling  Results from GMOS Monitoring Network Sites in South America}
