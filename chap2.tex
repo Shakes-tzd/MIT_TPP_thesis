@@ -8,40 +8,16 @@
 \chapter{Predicting Mercury Concentrations in the Atmosphere in Latin America using GEOS-Chem }
 %% BACKGROUND
 \section{Background}
-\begin{flushleft}
 
-Chemical transport models such as GEOS-Chem provide an approximation of the behavior of various chemical species in the atmosphere that enables understanding of the real world and creates opportunities for future predictions. Moreover, model outputs being approximations means that they are inherently error prone and these errors must be identified, quantified and minimized to improve the model's usefulness. In order to evaluate the model errors and identify unexpected behaviors, comparison of the model outputs with observations of the atmosphere is critical \cite{brasseur_modeling_2017}. Therefore, models and observation networks have a symbiotic relationship that is one of the cornerstone ingredients of the multidisciplinary frameworks for producing scientific information and knowledge that is salient, credible and legitimate to inform the public and policy makers. According to Cash et al.,(2003), science is likely to influence social responses to public issues when relevant stakeholders consider it credible, salient, and legitimate\cite{cash_salience_2003}. Comparisons of model output with observations address the credibility aspect, which is concerned with the scientific adequacy of the technical evidence \cite{cash_salience_2003}.Furthermore, Cash et al., (2003) argue that systems that actively and consciously manage the multiple boundaries within the system and balance trade-offs between salience, credibility, and legitimacy are more effective than those that do not \cite{cash_salience_2003}. Considering Cash et al., (2003)'s proposition together with Brasseur et al. (2017)'s description of models as a common platform for the integration of information from instruments measuring different species and operating  on platforms with different measurement locations and schedules, model observation comparison is an important form of effective boundary management. 
-\end{flushleft}
 
 \begin{flushleft}
 An ensemble of observations helps check consistency of observations and enables constraints from multiple sources to be considered in evaluating the model\cite{brasseur_modeling_2017}.Therefore, numerous studies comparing different Hg model outputs to Hg observation have been published which has improved our understanding of the biogeochemical cycle of Hg. As an example, Chapter 5 of the GMA 2018 analyzes model and measurement studies that address many aspects of Hg transport and fate. These include emissions, atmospheric chemistry, removal processes, modeling, and historical trends. Moreover, region specific modelling studies are presented featuring the polar regions, Europe, North America and East Asia. However, no detailed modelling studies are presented for some of the regions that are reported to have high anthropogenic Hg emissions as seen on Figure \ref{fig:world_hg_emisions}. We also scanned numerous modelling studies to identify the extent to which regions such as Latin America, Africa and South East Asia are analyzed in the context of model observation comparison and the analysis in this thesis is one on the few literature sources that deliberately target one of those regions, Latin America. 
 \end{flushleft}
 
-\begin{figure}[H]
-  \includegraphics[width=0.8\textwidth]{templates/figures/06-12-22_total_Hg0-emissions-per-year_globally_001.pdf}
-  \centering
-  \caption{Spatial distribution of annual average Hg anthropogenic emissions for a year period between July 2014 and July 2015}
-  \label{fig:world_hg_emisions}
-\end{figure}
-\FloatBarrier
 
 
-\begin{flushleft}
-Additionally, the Madre de Dios region was estimated to have released the largest quantities of Hg to the environment and the atmosphere. Madre de Dios whihc is shown by the red outline in Figure \ref{fig:PeruCS} is a rain forest region that lies between Bolivia and Brazil and covers roughly 85,000 square kilometers . The region's name is derived from the name of a major river that runs through it, and smaller streams and rivers cross through it to provide transportation and fishing for indigenous communities. Furthermore, these waterways are the main sites of ASGM and, subsequently, Hg contamination. Hg has been extensively studied in Madre de Dios, both in people and in the environment \cite{ashe_elevated_2012}\cite{moody_mercury_2020-1}.
 
-\end{flushleft}
 
-\begin{flushleft}
-\begin{figure}[H]
-  \includegraphics[width=0.6\textwidth]{templates/figures/Peru_Maps/CasestudyRegion.pdf}
-  \centering
-  \caption{Departments predicted to be the prominent sources of ASGM Hg releases according to the Artisanal Gold Council's  Inventory Report for the ASGM sector in Peru (2017) }
-  \label{fig:PeruCS}
-\end{figure}
-\FloatBarrier
-
-Prior environmental measurements performed in Madre de Dios regarding the amount of Hg entering soil, air, and waterways reflected drastically different results between government estimates and international researchers. This demonstrates a need to generate further system-wide constraints on ASGM Hg use and pollution. This thesis project complements previous studies and distinguishes itself from previous studies in this highly-studied region by investigating the extent to which the GEOS-Chem model can leverage existing measurements of Hg int the atmosphere and Hg emission estimates in published Hg global and national inventories to develop constraints on the amount of ASGM Hg emission in Peru. To develop a comprehensive understanding of how Hg pollution impacts the environment, long-term monitoring of ambient Hg data on a global scale is vital to assessing its emission, transportation, atmospheric chemistry, and deposition processes. Brasseur et al., (2017) assert that having a large ensemble of observations is vital for model evaluation; hence the lack of studies that analyze Latin America, Africa and South East Asia may be attributed to the fact that the aforementioned regions historically did not have enough Hg monitoring capacity. Although, a notable number of new atmospheric Hg monitoring programs have been set up and monitoring data from Latin America published in the last few years, Latin America, Africa and South East Asia are significantly behind Europe, and North America regarding capturing the relevant observation ensembles. Regardless of the dearth of a large ensemble  of observations in Latin America, we present analysis and evaluation of Hg  concentration measurements recorded at multiple sites in Latin America including gaseous elemental mercury (GEM) concentration data form a network of passive air samplers (PAS). 
-\end{flushleft}
 
 
 
@@ -49,7 +25,7 @@ Prior environmental measurements performed in Madre de Dios regarding the amount
 \section{Methods}
 \subsection{GEOS-Chem}
 \begin{flushleft}
-The GEOS-Chem model (Bey et al., 2001) is used to simulate atmospheric concentrations of Hg for comparison with data constraints. GEOS-Chem is a global-scale, 3-D atmospheric chemical transport model driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office. It runs at a resolution of 0.25° latitude x 0.3125° longitude horizontally, equivalent to $\approx$27 km at the equator, and 72 levels in the vertical. Numerous atmospheric chemical species have been simulated using GEOS-Chem, including Hg (Selin et al., 2008, Zhang et al., 2016, Selin et al., 2007, Holmes et al., 2010, Amos et al., 2012). Travnikov et al. (2017) also used GEOS-Chem for international model comparisons to support the Global Mercury Assessment and the Minamata Convention on Mercury.
+The GEOS-Chem model \cite{bey_global_2001} is used to simulate atmospheric concentrations of Hg for comparison with data constraints. GEOS-Chem is a global-scale, 3-D atmospheric chemical transport model driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office. It runs at a resolution of 0.25° latitude x 0.3125° longitude horizontally, equivalent to $\approx$27 km at the equator, and 72 levels in the vertical. Numerous atmospheric chemical species have been simulated using GEOS-Chem, including Hg \cite{amos_gas-particle_2012,holmes_global_2010,selin_chemical_2007,selin_global_2008,zhang_naturally-derived_2016}. Travnikov et al. (2017) also used GEOS-Chem for international model comparisons to support the Global Mercury Assessment and the Minamata Convention on Mercury \cite{travnikov_multi-model_2017}.
 Herein we simulated the Hg concentration in the atmosphere using version 12.8.0 of GEOS-Chem at a resolution of 2.0$\times$2.5, which is equivalent to a 200 km$\times$250 km grid square at the equator. Furthermore, the GMA 2018 emissions inventory was used to represent anthropogenic emissions sources from all sectors. Different inputs to the GEOS-Chem model such as emissions sources can be toggled on or off depending on the research objective, hence a baseline simulation was created by turning on all Hg emissions sources globally. Moreover, a \off was generated by turning off the ASGM source globally to evaluate the contribution of ASGM to the baseline \hg in the atmosphere by calculating difference between the \on and \off.
 \end{flushleft}
 
@@ -72,23 +48,14 @@ Base (ASGM=OFF)        & 2.0$\times$2.5 & All Hg anthropogenic emission sources 
 
 \begin{flushleft}
 
- The frequency of the simulation output set set to output daily \hg averages at the global scale while the \hg output for the grid boxes corresponding to the locations of the observation sites was set to a hourly frequency. The GEOS-Chem outputs for all the simulations conducted were in units of parts per trillion (ppt) and were converted to \nang to compare them to observations.
+ The frequency of the simulation output set set to output daily \hg averages at the global scale while the \hg output for the grid boxes corresponding to the locations of the observation sites was set to a hourly frequency. The GEOS-Chem outputs for all the simulations conducted were in units of parts per trillion (ppt) and were converted to \nang at standard temperature and pressure (273 K, 1 atm) to compare them to observations.
 \end{flushleft}
 
 \subsection{Observation Data}
-\begin{flushleft}
-Based on Yoshimura et al.'s (2021) estimate of mercury losses and gold production by ASGM, Latin America has the highest average ratio of mercury losses to gold production, 4.63, while Africa and Asia have the lowest at 1.96 and 1.23, respectively. Moreover, the GMA 2018 reported that ASGM Hg emissions in Latin America were the highest, and Figure \ref{fig:Latam_Hg_em} shows that Peru is one of the top emitters of ASGM-related Hg and 60\% of the top 10 ASGM Hg emitting countries in the world are in Latin America  \cite{united_nations_environment_programme_technical_2019}. However, atmospheric Hg data from Latin America are rare; hence Hg dynamics in the region are not well understood. 
-\end{flushleft}
-\begin{figure}[H]
-  \includegraphics[width=0.7\textwidth]{templates/figures/07-14-22_gma2018_top-asgm-emmiting-countries.pdf}
-  \centering
-  \caption{Bar chart showing the GMA 2018 ASGM \hg emission estimates for all countries in the world that have estimated ASGM \hg emissions above 1 Mg. The red bars highlight countries in Latin America }
-  \label{fig:Latam_Hg_em}
-\end{figure}
-\FloatBarrier
+
 
 \begin{flushleft}
- The Global Mercury Observation System (GMOS) is one of a few major global projects aimed at developing a global observing system for mercury pollution. A vast network of ground-based monitoring stations, regular oceanographic cruises, and lower, upper, and stratospheric measurements make up this European-funded project \cite{sprovieri_atmospheric_2016} \cite{koenig_seasonal_2021}. More than 40 ground-based monitoring sites constitute the international network, covering many regions with limited to no observational data available before GMOS. The GMOS monitoring network sites in Latin America are shown by the dots with red outline on Figure \ref{fig:GMOS_PAS_stations_map}. Available Hg observation data from the GMOS stations on Figure  \ref{fig:GMOS_PAS_stations_map} was obtained from the GMOS online database as well as published studies about the Hg monitoring data from the different sites. different sites\cite{koenig_seasonal_2021}.  
+ The Global Mercury Observation System (GMOS) is one of a few major global projects aimed at developing a global observing system for mercury pollution. A vast network of ground-based monitoring stations, regular oceanographic cruises, and lower, upper, and stratospheric measurements make up this European-funded project \cite{sprovieri_atmospheric_2016} \cite{koenig_seasonal_2021}. More than 40 ground-based monitoring sites constitute the international network, covering many regions with limited to no observational data available before GMOS. The GMOS monitoring network sites in Latin America are shown by the dots with red outline on Figure \ref{fig:GMOS_PAS_stations_map}. Available Hg observation data from the GMOS stations on Figure  \ref{fig:GMOS_PAS_stations_map} was obtained from the GMOS online database as well as published studies about the Hg monitoring data from the different sites \cite{koenig_seasonal_2021}.  
 \end{flushleft}
 \begin{figure}[H]
   \includegraphics[width=0.8\textwidth]{templates/figures/Passive_Samplers/Latam_Passive_SamplerSites.pdf}
@@ -109,7 +76,7 @@ The hourly measurements of total gaseous mercury (TGM) in the atmosphere in \nan
 \subsection{GMOS Observations vs GEOS-Chem}
 
 \begin{flushleft}
-An striking trend apparent in most of the plots of the observed vs modeled Hg concentration on Figure \ref{fig:GMOSvsGC} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest but the Niew Nickerie and Manaus sites had the least data records at 215 and 100 respectively as seen on Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
+A striking trend apparent in most of the plots of the observed vs modeled Hg concentration on Figure \ref{fig:GMOSvsGC} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest but the Niew Nickerie and Manaus sites had the least data records at 215 and 100 respectively as seen on Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
 \end{flushleft}
 \begin{table}[H]
 \captionof{table}{The comparison of the model predictions of the average Hg concentration for a 1 year measurement period}
@@ -197,13 +164,13 @@ Chalcataya     &33.33 &-12.5   \\
 \FloatBarrier
 
 \begin{flushleft}
-GEOS-Chem's poor predictive capacity observed above is also addressed in Feinberg et al.,(2022) evaluated atmospheric Hg uptake by vegetation in GEOS-Chem by constraining vegetation as an Hg sink through comparison of simulations with a compiled database of litterfall, throughfall and flux tower tower measurements from 93 forested sites. They found that the GEOS-Chem version that was used in this analysis underestimated dry deposition or vegetation uptake of Hg which may explain why the observed Hg from the different Latin American Hg concentration measurements is lower that the concentration predicted by the model. 
+GEOS-Chem's poor predictive capacity observed above is also addressed in Feinberg et al. (2022) where we evaluated atmospheric Hg uptake by vegetation in \gc by constraining vegetation as an Hg sink through comparison of simulations with a compiled database of litterfall, throughfall and flux tower tower measurements from 93 forested sites. We found that the \gc version, 12.8  underestimated dry deposition of \hg which may explain why the observed Hg from the measurements of Hg in the atmosphere at different sites in Latin America was lower than the concentration predicted by the model. Recent studies evaluating the global biogeochemical cycle of Hg argue that Hg concentrations in the atmosphere exhibit an inter-hemispheric gradient from the southern to the northern hemisphere. The annual average \hg modelled by \gc seems to follow the proposed gradient as seen on Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001}. Furthermore, the PAS measurements as seen on Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_001} were higher in most of the eastern coastal regions and in the north western coastal regions. These high values are the result of the fact that the PASs were placed in close proximity to populated area where the Hg background in the atmosphere may also be influenced by Hg emission sources such as power generation and ASGM.
 
 \end{flushleft}
 
 \begin{figure}[H]
   \includegraphics[width=0.7\textwidth]{templates/figures/Passive_Samplers/06-12-22_pas_vs_model_Hg0-per-year_001.pdf}
-  \caption{Surface \hg over Latin America averaged over the course of one year, 2015.The figure compares the the annual average \hg produced by the \on (background grid) with the PAS measurements (circles). The PAS measurements are highest in the eastern coastal regions and in the north western region while the model overestimates the concentrations more inland regions.}
+  \caption{Surface \hg over Latin America averaged over the course of one year, 2015.The figure compares the the annual average \hg produced by the \on (background grid) with the PAS measurements (circles).}
   \label{fig:06-12-22_pas_vs_model_Hg0-per-year_001}
   \centering
   
@@ -214,7 +181,7 @@ GEOS-Chem's poor predictive capacity observed above is also addressed in Feinber
 
 \subsection{Observed Hg Concentration at CHC}
 \begin{flushleft}
-The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown on Figure\ref{fig:ObsTseries}. The detailed characteristics of the observations over this measurement period were described in Koening et al.,(2020); hence our analysis was focused on using the observation TGM data to evaluate the performance of the GEOS-Chem model in predicting the \hg  based on the input \hg emission inventories. As shown by the plot of the \hg 120 day moving as a function of time on Figure\ref{fig:ObsTseries}, we found that the observed TGM concentration in the atmosphere had a visible upward trend, which Koening et al.,(2020) attribute to the El Niño-Southern Oscillation (ENSO). Consequently, Koening et al.,(2020) categorized the measured TGM concentrations in the atmosphere at the CHC site into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. The meteorology associated with ENSO was not accounted for in the GEOS-Chem \hg simulations we conducted; therefore the simulated \hg  at CHC was compared to the TGM observations for the one year period between 2014-07-02 to 2015-07-02.
+The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown on Figure\ref{fig:ObsTseries}. The detailed characteristics of the observations over this measurement period were described in Koening et al.,(2020); hence our analysis was focused on using the observation TGM data to evaluate the performance of the GEOS-Chem model in predicting the \hg based on the input \hg emission inventories. As shown by the plot of the \hg 120 day moving as a function of time on Figure\ref{fig:ObsTseries}, we found that the observed TGM concentration in the atmosphere had a visible upward trend, which Koening et al.,(2020) attribute to the El Niño-Southern Oscillation (ENSO). Consequently, Koening et al.,(2020) categorized the measured TGM concentrations in the atmosphere at the CHC site into normal conditions (NC), 2014-07 to 2015-05 and ENSO conditions  2015-06 to 2016-01. The meteorology associated with ENSO was not accounted for in the GEOS-Chem \hg simulations we conducted; therefore the simulated \hg  at CHC was compared to the TGM observations for the one year period between 2014-07-02 to 2015-07-02.
 \end{flushleft}
 
 \begin{figure}[H]
@@ -239,7 +206,7 @@ The time series of the observed concentration at the CHC station between July 20
 \end{figure}
 \FloatBarrier
 \begin{flushleft}
-We also found that the mean \hg concentration produced by the Base (ASGM= OFF) simulation was within 1\% of the observed TGM concentration as seen on Table \ref{tab:ModelvsObsStats} where$\mu$ is the annual average Hg concentration, $\sigma$ is the standard deviation, $iqr$ is the interquartile range, $r_s$ is the Spearman correlation, $r$ is the Pearson correlation and $R^2$ is the coefficient of determination. On the contrary, the average \hg produced by the \on shown by the blue line plot on Figure \ref{fig:ModelvsObsNstats} overestimated the mean by 29\%.
+We also found that the mean \hg concentration produced by the Base (ASGM= OFF) simulation was within 1\% of the observed TGM concentration as seen on Table \ref{tab:ModelvsObsStats} where $\mu$ is the annual average Hg concentration, $\sigma$ is the standard deviation, $iqr$ is the interquartile range, $r_s$ is the Spearman correlation, $r$ is the Pearson correlation, and $R^2$ is the coefficient of determination. On the contrary, the average \hg produced by the \on shown by the blue line plot on Figure \ref{fig:ModelvsObsNstats} overestimated the mean by 29\%.
  
 \end{flushleft}
 \setlength{\tabcolsep}{2.5pt}
@@ -264,8 +231,8 @@ We also found that the mean \hg concentration produced by the Base (ASGM= OFF) s
 \FloatBarrier
 
 \begin{flushleft}
-Even though GEOS-Chem reproduced the mean Hg concentrations at CHC in the \off, the Spearman ($r_s$) and Pearson ($r$) correlations between the modelled and observed concentrations were very low at 1.63e-1 and 1.40e-1 respectively. Moreover, the coefficient of determination, $R^2$ between the observed and modelled concentrations in \on case was almost zero at 0.021. Also, the \on did not reproduce the variability in the observed concentrations as evident in Figure \ref{fig:ModelvsObsNstats} and in Table \ref{tab:ModelvsObsStats} where we gleaned that the observations had more than twice the modelled variance in the \on case. Brasseur et al.,(p.471 2017) assert that in cases where a model captures the observed means but not the observed variability, the mean may be wrongly interpreted \cite{brasseur_modeling_2017}.  In addition, we found that turning on ASGM emissions in GEOS-Chem led to \hg s in the atmosphere that had a variance that is comparable with the observed variance. However, we also discovered that turning on ASGM emissions in the model did not lead to improvements in the correlation between the modeled and observed \hg in the atmosphere. 
-The relationship between the mean and variance in the observed and modeled Hg concentration in the atmosphere at CHC was further explored as shown on Figure \ref{fig:Histplots} which shows the extent to which the GEOS-Chem model reproduces the mean and IQR of the observations. Even though the \on  better recreated the IQR of the Hg concentration in the atmosphere, the mean \hg in this simulation was almost two standard deviations away from the mean of the observations. The above comparison indicates that the mean was not a good metric to investigate the relationship between the Hg concentration in the atmosphere and ASGM emissions as modelled by GEOS-Chem. 
+Even though GEOS-Chem reproduced the mean Hg concentrations at CHC in the \off, the Spearman ($r_s$) and Pearson ($r$) correlations between the modelled and observed concentrations were very low at 1.63e-1 and 1.40e-1 respectively. Moreover, the coefficient of determination, $R^2$ between the observed and modelled concentrations in \on case was almost zero at 0.021. Also, the \on did not reproduce the variability in the observed concentrations as evident in Figure \ref{fig:ModelvsObsNstats} and in Table \ref{tab:ModelvsObsStats} where we gleaned that the observations had more than twice the modelled variance in the \on case. Brasseur and Jacob,(p.471 2017) assert that in cases where a model captures the observed means but not the observed variability, the mean may be wrongly interpreted \cite{brasseur_modeling_2017}. In the case of \off, the mean may be wrongly interpreted because of the exclusion of the ASGM Hg emissions. In addition, we found that turning on ASGM emissions in GEOS-Chem led to  atmospheric Hg concentrations that had a variance comparable with the observed variance. However, we also discovered that turning on ASGM emissions in the model did not lead to improvements in the correlation between the modeled and observed \hg in the atmosphere. 
+The relationship between the mean and variance in the observed and modeled  atmospheric Hg concentration at CHC was further explored as shown on Figure \ref{fig:Histplots} which shows the extent to which the GEOS-Chem model reproduces the mean and IQR of the observations. Even though the \on  better recreated the IQR of the Hg concentration in the atmosphere, the mean \hg in this simulation was almost two standard deviations away from the mean of the observations. The above comparison indicates that the mean was not a good metric to investigate the relationship between the Hg concentration in the atmosphere and ASGM emissions as modelled by GEOS-Chem. 
 \end{flushleft}
 
 
