@@ -5,18 +5,35 @@
 %% \files=
 %% prompt when you run the file main.tex through LaTeX.
 %% prompt when you run the file main.tex through LaTeX.
-\chapter{Predicting Mercury Concentrations in the Atmosphere in Latin America using GEOS-Chem }
+\chapter{Evaluating the GEOS-Chem Predictions of Mercury Concentrations in the Atmosphere }
 %% BACKGROUND
 \section{Background}
 
 
 \begin{flushleft}
-An ensemble of observations helps check consistency of observations and enables constraints from multiple sources to be considered in evaluating the model\cite{brasseur_modeling_2017}.Therefore, numerous studies comparing different Hg model outputs to Hg observation have been published which has improved our understanding of the biogeochemical cycle of Hg. As an example, Chapter 5 of the GMA 2018 analyzes model and measurement studies that address many aspects of Hg transport and fate. These include emissions, atmospheric chemistry, removal processes, modeling, and historical trends. Moreover, region specific modelling studies are presented featuring the polar regions, Europe, North America and East Asia. However, no detailed modelling studies are presented for some of the regions that are reported to have high anthropogenic Hg emissions as seen on Figure \ref{fig:world_hg_emisions}. We also scanned numerous modelling studies to identify the extent to which regions such as Latin America, Africa and South East Asia are analyzed in the context of model observation comparison and the analysis in this thesis is one on the few literature sources that deliberately target one of those regions, Latin America. 
+Mercury (Hg) is found pervasive in the atmosphere and can accumulate in ecosystems, where it is transformed to its highly toxic form (methyl-Hg), which is destructive to ecosystems. Moreover, Hg lasts a long time in the atmosphere, allowing it to travel to faraway places resulting in  its elemental form, \hg \ being distributed globally through the atmosphere \cite{horowitz_new_2017,shah_improved_2021}.Approximately 90 to 99 percent of Hg is observed in the atmosphere as Gaseous Elemental Mercury (GEM/Hg0). Furthermore, both ocean and terrestrial surfaces emit elemental mercury (Hg0). In contrast, most deposited mercury (dry or wet) is oxidized mercury (HgII). Since most Hg entering ecosystems comes from the atmosphere, it is essential to monitor and model atmospheric Hg and Hg deposition to develop policies to curb the negative impacts of Hg on people and the environment.
+\end{flushleft}
+\begin{flushleft}
+
+Modeling Hg's atmospheric chemistry transport using CTMs is crucial to understanding it's sources, processes, and fate. Furthermore, models such as GEOS-Chem allow us to understand the natural world and predict its future by approximating the behavior of various chemical species in the atmosphere. Consequently, identifying, quantifying, and minimizing model errors is essential, and observations of the atmosphere are crucial resources to do so. Evaluating a model with an ensemble of observations helps check consistency of a observations and enables constraints from multiple sources to be considered\cite{brasseur_modeling_2017}.
+ \end{flushleft}
+\begin{flushleft}
+ 
+It is crucial to monitor ambient Hg data on a global scale over time in order to assess its emissions, transportation, atmospheric chemistry, and deposition. Brasseur and Jacob, (2017) prescribe that having a large ensemble of observations is vital for model evaluation. Therefore, it is of no surprise that evaluation of Hg models with observational data is an active area of research with a wide range of studies analyzing different characteristics of Hg in the atmosphere. These include emissions, atmospheric chemistry, removal processes, modeling, and historical trends. Moreover, region specific modelling studies are presented featuring the polar regions, Europe, North America and East Asia. However, no detailed modelling studies are presented for some of the regions that are reported to have high anthropogenic Hg emissions such as Latin America and Africa. Moreover, an extensive scan of numerous modelling studies to identify the extent to which regions such as Latin America, Africa and South East Asia are analyzed in the context of model observation comparison resulted in no studies being found. The dearth of studies that analyze these regions may be attributed to the fact that these regions historically and currently lack enough Hg long term monitoring capacity as depicted in Figure \ref{fig:global-hg-monitoring-networks} which shows the distribution of global Hg monitoring networks as published in the GMA 2018. 
 \end{flushleft}
 
+\begin{figure}[H]
+  \includegraphics[width=\textwidth]{templates/figures/global-hg-monitoring-networks.pdf}
+  \caption{Global map of Hg monitoring networks \cite{united_nations_environment_programme_technical_2019}}
+  \label{fig:global-hg-monitoring-networks}
+  \centering
+  
+\end{figure}
+\FloatBarrier
 
-
-
+\begin{flushleft}
+ As seen on Figure \ref{fig:global-hg-monitoring-networks}, Latin America, Africa and South East Asia are significantly behind Europe, and North America regarding access to the relevant observation ensembles to track the evolution of Hg in the atmosphere. Regardless of the dearth of a large ensemble  of observations in Latin America, I present analysis and evaluation of atmospheric Hg concentrations simulated by the GEOS-Chem model with measurements recorded at multiple sites in Latin America including total gaseous mercury (TGM) measurements from the Global Mercury Observation System (GMOS) and gaseous elemental mercury (GEM) concentration data from a network of passive air samplers (PAS) distributed across Latin America.
+\end{flushleft}
 
 
 
@@ -25,8 +42,8 @@ An ensemble of observations helps check consistency of observations and enables 
 \section{Methods}
 \subsection{GEOS-Chem}
 \begin{flushleft}
-The GEOS-Chem model \cite{bey_global_2001} is used to simulate atmospheric concentrations of Hg for comparison with data constraints. GEOS-Chem is a global-scale, 3-D atmospheric chemical transport model driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office. It runs at a resolution of 0.25° latitude x 0.3125° longitude horizontally, equivalent to $\approx$27 km at the equator, and 72 levels in the vertical. Numerous atmospheric chemical species have been simulated using GEOS-Chem, including Hg \cite{amos_gas-particle_2012,holmes_global_2010,selin_chemical_2007,selin_global_2008,zhang_naturally-derived_2016}. Travnikov et al. (2017) also used GEOS-Chem for international model comparisons to support the Global Mercury Assessment and the Minamata Convention on Mercury \cite{travnikov_multi-model_2017}.
-Herein we simulated the Hg concentration in the atmosphere using version 12.8.0 of GEOS-Chem at a resolution of 2.0$\times$2.5, which is equivalent to a 200 km$\times$250 km grid square at the equator. Furthermore, the GMA 2018 emissions inventory was used to represent anthropogenic emissions sources from all sectors. Different inputs to the GEOS-Chem model such as emissions sources can be toggled on or off depending on the research objective, hence a baseline simulation was created by turning on all Hg emissions sources globally. Moreover, a \off was generated by turning off the ASGM source globally to evaluate the contribution of ASGM to the baseline \hg in the atmosphere by calculating difference between the \on and \off.
+The GEOS-Chem model \cite{bey_global_2001} was used to simulate atmospheric concentrations of Hg for comparison with data constraints. GEOS-Chem is a global-scale, 3-D atmospheric chemical transport model driven by meteorological input from the Goddard Earth Observing System (GEOS) of the NASA Global Modeling and Assimilation Office. It runs at a resolution of 0.25° latitude x 0.3125° longitude horizontally, equivalent to $\approx$27 km at the equator, and 72 levels in the vertical. Numerous atmospheric chemical species have been simulated using GEOS-Chem, including Hg \cite{amos_gas-particle_2012,holmes_global_2010,selin_chemical_2007,selin_global_2008,zhang_naturally-derived_2016}. Travnikov et al. (2017) also used GEOS-Chem for international model comparisons to support the Global Mercury Assessment and the Minamata Convention on Mercury \cite{travnikov_multi-model_2017}.
+Herein we simulated the Hg concentration in the atmosphere using version 12.8.0 of GEOS-Chem at a resolution of 2.0$\times$2.5, which is approximately equal to a 222 km$\times$277.5 km grid square at the equator. Furthermore, the GMA 2018 emissions inventory was used to represent anthropogenic emissions sources from all sectors. Different inputs to the GEOS-Chem model such as emissions sources can be toggled on or off depending on the research objective, hence a baseline simulation was created by turning on all Hg emissions sources globally. Moreover, a \off was generated by turning off the ASGM source globally to evaluate the contribution of ASGM to the baseline \hg in the atmosphere by calculating difference between the \on and \off.
 \end{flushleft}
 
 \begin{table}[H]
