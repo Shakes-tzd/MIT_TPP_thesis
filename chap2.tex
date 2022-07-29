@@ -26,7 +26,7 @@ According to Brasseur and Jacob, (2017), it is crucial to have a large ensemble 
 \FloatBarrier
 
 \begin{flushleft}
- In this chapter, I evaluate atmospheric Hg concentrations simulated by the GEOS-Chem model with observed Hg at multiple sites in Latin America. I combine simulations of Hg in the atmosphere produced by the \gc CTM (Sect. 2.2.1) with ground-based observations of atmospheric total gaseous mercury (TGM) (Sect. 2.2.2) from the Global Mercury Observation System (GMOS)\cite{sprovieri_atmospheric_2016} and gaseous elemental mercury (GEM) data from a network of passive air samplers (PAS) distributed across Latin America. Section 2.3 presents results and discussion\cite{quant_measuring_2021}. Comparisons of observations and model outputs are given in Sect. 2.3.1. Finally, I discuss the implications of the current state of atmospheric monitoring and modeling atmospheric Hg in Latin America (Sect. 2.3.2) and summarize my conclusions (Sect. 2.4).
+ In this chapter, I employ the GEOS-Chem model with observed Hg at multiple sites in Latin America. I combine simulations of Hg in the atmosphere produced by the \gc CTM (Sect. 2.2.1) with ground-based observations of atmospheric total gaseous mercury (TGM) (Sect. 2.2.2) from the Global Mercury Observation System (GMOS)\cite{sprovieri_atmospheric_2016} and gaseous elemental mercury (GEM) data from a network of passive air samplers (PAS) distributed across Latin America. Section 2.3 presents results and discussion\cite{quant_measuring_2021}. Comparisons of observations and model outputs are given in Sect. 2.3.1. Finally, I discuss the implications of the current state of atmospheric monitoring and modeling atmospheric Hg in Latin America (Sect. 2.3.2) and summarize my conclusions (Sect. 2.4).
 \end{flushleft}
 
 
@@ -123,28 +123,34 @@ Chalcataya      &   333 & 7/1/2014-2/1/2016 \\
 \begin{flushleft}
 A striking trend in most plots of the observed vs modeled Hg concentration on Figure \ref{fig:GMOSvsGC} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time-based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest, but the Niew Nickerie and Manaus sites had the most minor data records at 215 days and 100 days, respectively, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
 \end{flushleft}
-\begin{table}[H]
-\captionof{table}{The comparison of the model predictions of the average Hg concentration for the available measurement period}
-\label{tab:ASGM_at_GMOS_annual_avs}
+% \begin{table}[H]
+% \captionof{table}{The comparison of the model predictions of the average Hg concentration for the available measurement period}
+% \label{tab:ASGM_at_GMOS_annual_avs}
 
-\centering
-\resizebox{\textwidth}{!}{\begin{tabular}{lcccccc}
-  \hline
+% \centering
+% \resizebox{\textwidth}{!}{\begin{tabular}{lcccccc}
+%   \hline
 
-GMOS & Observed Hg\textsuperscript{0} & Observation Standard & Base(ASGM=ON) Hg\textsuperscript{0} & Base(ASGM=ON) Standard  & ASGM Contribution  Hg\textsuperscript{0}   \\
-Sit & (ng m$^{-3}$)/year             & Deviation ($\sigma$) & (ng m$^{-3}$)/year                   & Deviation ($\sigma$)      &(ng m$^{-3}$)/year\\
+% GMOS & Observed Hg\textsuperscript{0} & Observation Standard & Base(ASGM=ON) Hg\textsuperscript{0} & Base(ASGM=ON) Standard  & ASGM Contribution  Hg\textsuperscript{0}   \\
+% Sit & (ng m$^{-3}$)/year             & Deviation ($\sigma$) & (ng m$^{-3}$)/year                   & Deviation ($\sigma$)      &(ng m$^{-3}$)/year\\
                         
-\hline
-Sisal           &   1.19    & 0.14 & 1.27 & 0.05 & 0.12  \\
-Calhau          &   1.22    & 0.12 & 1.30 & 0.04 & 0.11  \\
-Niew Nickerie   &   1.11    & 0.23 & 1.41 & 0.06 & 0.25  \\
-Manaus          &   1.49    & 0.31 & 1.27 & 0.09 & 0.23  \\
-Chalcataya      &   0.90    & 0.16 & 1.20 & 0.14 & 0.28  \\
-  \hline
-\end{tabular}}
+% \hline
+% Sisal           &   1.19    & 0.14 & 1.27 & 0.05 & 0.12  \\
+% Calhau          &   1.22    & 0.12 & 1.30 & 0.04 & 0.11  \\
+% Niew Nickerie   &   1.11    & 0.23 & 1.41 & 0.06 & 0.25  \\
+% Manaus          &   1.49    & 0.31 & 1.27 & 0.09 & 0.23  \\
+% Chalcataya      &   0.90    & 0.16 & 1.20 & 0.14 & 0.28  \\
+%   \hline
+% \end{tabular}}
 
-\end{table}
-
+% \end{table}
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/GMOS_Sites.pdf}
+\centering
+\captionof{figure}{Time series plots of the observed TGM concentrations at different GMOS sites in red with the corresponding modeled concentration in blue and the associated ASGM contribution in black. Available observations and corresponding model output between January 2013 and January 2015 were plotted except for the CHC site, whose data is from July 2014 and January 2016}
+\label{fig:GMOSvsGC}
+\end{figure}
+\FloatBarrier
 
 
 \begin{flushleft}
