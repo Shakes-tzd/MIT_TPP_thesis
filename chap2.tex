@@ -196,7 +196,7 @@ Bariloche, Agentina         & BAR       & -41.13    & -72.42    &    Mountain si
 \end{figure}
 \FloatBarrier
 \begin{flushleft}
-Moreover, Figure \ref{fig:GMOSvsGC} and Figure \ref{fig:gmos_sites_stats} clearly show that ASGMs modeled contribution is low in most of the sites except for Calcataya, Manaus, and Nieuw Nickerie. This behavior of the model regarding the predicted ASGM contribution at these sites is not surprising since these three sites are in countries estimated to be among the top 10 Latin American ASGM Hg emitters. 
+Moreover, Figure \ref{fig:GMOSvsGC} and Figure \ref{fig:gmos_sites_stats} clearly show that ASGMs modeled contribution is low in most of the sites except for Calcataya, Manaus, and Nieuw Nickerie. The model's behavior regarding the predicted ASGM contribution at these sites is not surprising since these sites are in countries estimated to be among the top 10 Latin American ASGM Hg emitters in the ASGM emission inventory used for \gc simulation. Even though the model estimates a notable ASGM contribution at the MAsnaus and Nieuw Nickerie sites, the sites lack enough data to fully characterize the ASGM contribution to the Hg concentration at the sites. However, the ASGM predicted contribution at Chalcataya 
 \end{flushleft}
 
 \begin{table}[H]
@@ -204,19 +204,19 @@ Moreover, Figure \ref{fig:GMOSvsGC} and Figure \ref{fig:gmos_sites_stats} clearl
 \label{tab:model_percentage_overestimation_of_mean}
 
 \center
-\resizebox{0.7\textwidth}{!}{\begin{tabular}{lccc}
+\resizebox{\textwidth}{!}{\begin{tabular}{lcccc}
   \hline
 
-GMOS Site       & Observed Average          & Modeled Average   &Percentage difference between \\
-                & TGM/GEM Concentration     & \hg Concentration      &modeled and observed mean (\%)  \\
+GMOS Site       & Observed Average TGM/GEM  & Modeled Average \hg        &  Percentage difference between       &   Percentage ASGM\\
+                &  Concentration (\nang )   &  Concentration (\nang)     &  modeled and observed average (\%)   &   Contribution \\
                         
 \hline
-Sisal          &    1.15                &             1.26                      & 10     \\
-Calhau         &     1.22               &               1.29                    & 6      \\
-Nieuw Nickerie &     1.17               &               1.41                    & 20    \\
-Manaus         &     1.01               &               1.26                    & 25     \\
-Chalcataya     &     1.04               &               1.21                    & 17     \\
-Bariloche      &     0.71               &               0.9                    & 27     \\
+Sisal          &     1.15               &             1.26               & 10                          &  \\
+Calhau         &     1.22               &             1.29               & 6                           &  \\
+Nieuw Nickerie &     1.17               &             1.41               & 20                          & \\
+Manaus         &     1.01               &             1.26               & 25                          &  \\
+Chalcataya     &     1.04               &             1.21               & 17                          &  \\
+Bariloche      &     0.71               &             0.9                & 27                          &  \\
   \hline
 \end{tabular}}
 
@@ -234,7 +234,7 @@ Bariloche      &     0.71               &               0.9                    &
 \end{flushleft}
 
 \begin{flushleft}
-A striking trend in most plots of the observed vs modeled Hg concentration in Figure \ref{fig:gmos_sites_scatter} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time-based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest, but the Niew Nickerie and Manaus sites had the most minor data records at 215 days and 100 days, respectively, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
+A striking trend in most plots of the observed vs modeled Hg concentration in Figure \ref{fig:gmos_sites_scatter} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time-based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest, but the Nieuw Nickerie and Manaus sites had the most minor data records at 215 days and 100 days, respectively, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
 \end{flushleft}
 
 \begin{flushleft}
