@@ -184,7 +184,7 @@ Bariloche, Agentina         & BAR       & -41.13    & -72.42    &    Mountain si
 \begin{flushleft}
 
 
- This study also compared observed and modeled data on a daily resolution as seen on Figure \ref{fig:GMOSvsGC}, which shows the time series of the modeled \hgc in the atmosphere alongside the observed Hg and the simulated ASGM contribution to the atmospheric Hg concentration at the GMOS sites. Evidently, the \gc model version used in this analysis overestimated the concentration of Hg on most days.   is the low predicted ASGM contribution at  four of the GMOS sites in contrast to the variability that closely matches the observed variability at the Chalcataya (CHC) site. A plausible explanation of models predicted ASGM contribution to the \hg at the GMOS location might be attributed to the CHC site's proximity to the Madre de Dios region in Peru, a known source of enormous ASGM Hg emissions. 
+ This study also compared observed and modeled data on a daily resolution as seen in Figure \ref{fig:GMOSvsGC}, which shows the time series of the modeled \hgc in the atmosphere alongside the observed Hg and the simulated ASGM contribution to the atmospheric Hg concentration at the GMOS sites. The \gc model version used in this study overestimated the concentration of Hg on most days. However, the \gc estimated average \hgc over the available observation period was within one standard deviation of the observed Hg in most of the sites except for the Manaus and Nieuw Nickerie sites. \gcs overestimates the observed GEM concentrations at the Manaus and Bariloche master sites by over 25\%  and the GEM concentration at Nieuw Nickerie by 20\%, which may be indicative of poor parameterization of GEM in the model. In particular, the overestimation of the GEM concentration at Manaus further indicates the model's poor parameterization of Hg vegetation uptake.
 \end{flushleft}
 
 
@@ -196,8 +196,31 @@ Bariloche, Agentina         & BAR       & -41.13    & -72.42    &    Mountain si
 \end{figure}
 \FloatBarrier
 \begin{flushleft}
-Moreover, the Nieuw Nickerie and Manaus sites had the worst mean and variability relationship with the modeled \hg as seen in. Even though the GEOS-Chem model overestimates the mean concentration over a one-year period of measurement except for the Manaus site, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}, the estimates for the mean concentration at Sisal and Calhau are within a 10\% margin as shown in Table \ref{tab:modelvsobs metrics}. The model's deficiency in predicting the mean may result from the model's poor parameterization of processes such as dry deposition and wet deposition. Poor parameterizations of ASGM Hg emissions in the model may also  contribute to the poor model skill in predicting the mean. Furthermore, the time series plot of the Hg concentrations at CHC shows a general upward trend that is not represented in the other observations and the model. 
+Moreover, Figure \ref{fig:GMOSvsGC} and Figure \ref{fig:gmos_sites_stats} clearly show that ASGMs modeled contribution is low in most of the sites except for Calcataya, Manaus, and Nieuw Nickerie. This behavior of the model regarding the predicted ASGM contribution at these sites is not surprising since these three sites are in countries estimated to be among the top 10 Latin American ASGM Hg emitters. 
 \end{flushleft}
+
+\begin{table}[H]
+\captionof{table}{Table showing the extent to which the model predicts the observations showed by the percentage difference between the model predictions and the observations }
+\label{tab:model_percentage_overestimation_of_mean}
+
+\center
+\resizebox{0.7\textwidth}{!}{\begin{tabular}{lccc}
+  \hline
+
+GMOS Site       & Observed Average          & Modeled Average   &Percentage difference between \\
+                & TGM/GEM Concentration     & \hg Concentration      &modeled and observed mean (\%)  \\
+                        
+\hline
+Sisal          &    1.15                &             1.26                      & 10     \\
+Calhau         &     1.22               &               1.29                    & 6      \\
+Nieuw Nickerie &     1.17               &               1.41                    & 20    \\
+Manaus         &     1.01               &               1.26                    & 25     \\
+Chalcataya     &     1.04               &               1.21                    & 17     \\
+Bariloche      &     0.71               &               0.9                    & 27     \\
+  \hline
+\end{tabular}}
+
+\end{table}
 
 
 \begin{flushleft}
@@ -214,33 +237,12 @@ Moreover, the Nieuw Nickerie and Manaus sites had the worst mean and variability
 A striking trend in most plots of the observed vs modeled Hg concentration in Figure \ref{fig:gmos_sites_scatter} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time-based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest, but the Niew Nickerie and Manaus sites had the most minor data records at 215 days and 100 days, respectively, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
 \end{flushleft}
 
-% \begin{table}[H]
-% \captionof{table}{Table showing the extent to which the model predicts the observations showed by the percentage difference between the model predictions and the observations }
-% \label{tab:modelvsobs metrics}
-
-% \centering
-% \resizebox{0.5\textwidth}{!}{\begin{tabular}{lcc}
-%   \hline
-
-% GMOS  &Percentage difference & Percentage difference  \\
-% Site & annual mean (\%) & standard deviation (\%)           \\
-                        
-% \hline
-% Sisal           & 6.72  &-64.29  \\
-% Calhau          & 6.56  &-66.66   \\
-% Niew Nickerie   & 27.03 &-73.91    \\
-% Manaus          & -14.77&-70.97    \\
-% Chalcataya      & 33.33 &-12.5   \\
-%   \hline
-% \end{tabular}}
-
-% \end{table}
-% \begin{flushleft}
+\begin{flushleft}
  
-% \end{flushleft}
+\end{flushleft}
 
 
-% \subsection{Passive Sampler Observations vs GEOS-Chem}
+\subsection{Passive Sampler Observations vs GEOS-Chem}
 
 
 \begin{flushleft}
