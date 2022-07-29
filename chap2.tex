@@ -66,27 +66,17 @@ No ASGM (ASGM=OFF)        & 2.0$\times$2.5 & All ASGM emissions are turned off
  The frequency of the simulation output was set to output daily \hg averages at the global scale, while the \hg output for the grid boxes corresponding to the locations of the GMOS observation sites was set to an hourly frequency. The GEOS-Chem outputs for all the simulations conducted were in units of parts per trillion (ppt) and were converted to \nang at standard temperature and pressure (273 K, 1 atm) to compare them to observations.
 \end{flushleft}
 
-\subsection{Observation Data}
-\begin{figure}[H]
- \centering
-  \includegraphics[width=0.8\textwidth]{templates/figures/Passive_Samplers/Latam_Passive_SamplerSites.pdf}
-  \caption{Map Showing the GMOS Monitoring Network Sites and Passive Sampler Locations in South America \cite{quant_measuring_2021,koenig_seasonal_2021}}
-  \label{fig:GMOS_PAS_stations_map}
- 
-  
-\end{figure}
-\FloatBarrier
-
+\subsection{Monitoring Site Characteristics}
 \begin{flushleft}
- The GMOS network is one of a few major global projects to develop a global observing system for mercury pollution. GMOS aims to provide high-quality Hg datasets in the Northern and Southern hemispheres to enable a more comprehensive assessment of atmospheric Hg concentrations and their dependence on meteorology, long-range atmospheric transport, and atmospheric emissions\cite{sprovieri_atmospheric_2016}. A vast network of ground-based monitoring stations, regular oceanographic cruises, and lower, upper, and stratospheric measurements make up this European Union-funded project \cite{sprovieri_atmospheric_2016,koenig_seasonal_2021}. More than 40 ground-based monitoring sites constitute the international network, covering many regions with limited to no observational data available before GMOS\cite{sprovieri_atmospheric_2016}. The GMOS monitoring network sites in Latin America are shown by the circles with a red outline on Figure \ref{fig:GMOS_PAS_stations_map}. Available Hg observation data from the GMOS stations on Figure  \ref{fig:GMOS_PAS_stations_map} was obtained from the GMOS online database (http://www.gmos.eu), as well as published studies about the Hg monitoring data from the different sites  \cite{koenig_seasonal_2021} Table \ref{tab:gmos_sites_info} gives an overview of the characteristics of the GMOS stations in Latin America. Additionally, average annual GEM concentration data for 27 sites in Latin America was obtained from Quant et al. (2021), which included information about the coordinates of the deployment sites and the period of measurement \cite{quant_measuring_2021}. These measurements were carried out by passive air samplers (PAS),  and the respective locations of the PAS are shown by the blue circles in Figure \ref{fig:GMOS_PAS_stations_map}. In contrast to active Hg monitoring equipment such as those used in the GMOS network, which can be prohibitively expensive, energy-intensive, and require extensive training, PAS require no energy to operate and do not require any special handling skills. Furthermore, PAS can be easily deployed for long periods. This combination of attributes of PAS allows more sampling sites to be studied over extended periods enabling significant average GEM concentration estimates to be obtained.
-\end{flushleft}
-
-\begin{table}[H]
-\captionof{table}{The GMOS sites evaluated \cite{sprovieri_atmospheric_2016}}
+ The GMOS network is one of a few major global projects to develop a global observing system for mercury pollution. GMOS aims to provide high-quality Hg data sets in the Northern and Southern hemispheres to enable a more comprehensive assessment of atmospheric Hg concentrations and their dependence on meteorology, long-range atmospheric transport, and atmospheric emissions\cite{sprovieri_atmospheric_2016}. A vast network of ground-based monitoring stations, regular oceanographic cruises, and lower, upper, and stratospheric measurements make up this European Union-funded project \cite{koenig_seasonal_2021,sprovieri_atmospheric_2016}. More than 40 ground-based monitoring sites constitute the international network, covering many regions with limited to no observational data available before GMOS\cite{sprovieri_atmospheric_2016}. The GMOS monitoring network has five sites in Latin America that actively monitor Hg levels. An analysis of the characteristics of the Sisal, Calhau, Manaus, Nieuw Nickerie, and Bariloche sites has been published by Sproviery et al., (2016), and the Chalcataya site has been analyzed in detail by Koenig et al., (2021) \cite{koenig_seasonal_2021,sprovieri_atmospheric_2016}. A summary of the sites' characteristics is shown in Table \ref{tab:gmos_sites_info}  and they are shown by red triangles in Figure \ref{fig:Latam_Passive_SamplerSites}. A primary objective of this study was to evaluate the degree to which ASGM Hg emissions affected the Hg concentrations in the atmosphere at regional and global scales, so high-frequency GMOS data were collected to facilitate this evaluation.
+  \end{flushleft}
+  
+  \begin{table}[H]
+\captionof{table}{The GMOS Sites Evaluated \cite{koenig_seasonal_2021,sprovieri_atmospheric_2016}. }
 \label{tab:gmos_sites_info}
 
 \centering
-\resizebox{\textwidth}{!}{\begin{tabular}{llccp{0.15\linewidth}rcll}
+\resizebox{\textwidth}{!}{\begin{tabular}{llccp{0.2\linewidth}rcll}
   \hline
 
 Site                        & Site      & Latitude  & Longitude & Physical  & Elevation    & Number of      & Site &  Measurement  \\
@@ -103,11 +93,32 @@ Bariloche, Agentina         & BAR       & -41.13    & -72.42    &    Mountain si
 
 \end{table}
 
-
-\subsection{ Observation Data Manipulation}
-\begin{flushleft}
-The hourly measurements of total gaseous mercury (TGM) in the atmosphere in \nang retrieved from the online GMOS database were converted to daily averages and compared to the GEOS-Chem modeled \hg concentration at the various sites for the period between 2012 and 2016.  The PAS data was compared to the annual average Hg concentration for 2015, and the coordinate information from the PAS data was used to directly compare the GEM observations and model outputs at the respective PAS sites.
+  
+ \begin{flushleft}
+  The GMOS sites are classified as either secondary or master sites in Table\ref{tab:gmos_sites_info} to indicate the type of data collected and the type of equipment used at the site. The secondary sites used the Tekran continuous mercury vapor analyzer, model 2537A/B (Tekran Instruments Corp., Toronto, Ontario, Canada), except for the Nieuw Nickerie site (NIK), Suriname, which used a Lumex RA-915+ mercury analyzer. The master sites used the Tekran model 2537A/B mercury vapor analyzer coupled with their speciation system model 1130 for GOM and model 1135 for particulate boundaries mercury (PBM2.5) with fractions less than 2.5 $\mu$m in diameter to prevent large particles from depositing on the KCl-coated denuder \cite{koenig_seasonal_2021,sprovieri_atmospheric_2016,gustin_measuring_2015}
+     
+ 
 \end{flushleft}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{templates/figures/Passive_Samplers/Latam_Passive_SamplerSites.pdf}
+  \caption{Map Showing the GMOS Monitoring Network Sites and Passive Sampler Locations in South America \cite{quant_measuring_2021,koenig_seasonal_2021}}
+  \label{fig:Latam_Passive_SamplerSites}
+\end{figure}
+\FloatBarrier
+
+\begin{flushleft}
+    In contrast to active Hg monitoring equipment such as those used in the GMOS network, which can be prohibitively expensive, energy-intensive, and require extensive training, passive air samplers (PAS) require no energy to operate and do not require any special handling skills \cite{quant_measuring_2021}. Furthermore, PAS can be easily deployed for long periods. This combination of attributes of PAS allows more sampling sites to be studied over extended periods enabling significant average GEM concentration estimates to be obtained. PAS monitoring is integral in informing the effectiveness evaluation of the MC\cite{gustin_measuring_2015,unep_guidance_2021}. Quant et al.,(2021) published a detailed analysis of the PAS sites in Latin America, and their respective locations are shown by the blue circles in Figure \ref{fig:Latam_Passive_SamplerSites}. 
+\end{flushleft}
+
+\subsection{Observation Data Sourcing Manipulation}
+\begin{flushleft}
+  Additionally, average annual GEM concentration data for 27 sites in Latin America was obtained from Quant et al.,(2021), which included information about the coordinates of the deployment sites and the period of measurement \cite{quant_measuring_2021}. Available Hg observation data from the GMOS stations on Figure  \ref{fig:Latam_Passive_SamplerSites} was obtained from the GMOS online database (http://www.gmos.eu), as well as published studies about the Hg monitoring data from the different sites  \cite{koenig_seasonal_2021}. The data sets were pre-processed based on the information in Sproviery et al.,(2016) and Koenig et al.,(2021) and daily and annual averages to compare with the \gc output\cite{koenig_seasonal_2021,sprovieri_atmospheric_2016}. The PAS data was compared to the modeled annual average Hg concentration for 2015 to evaluate, and the coordinate information from the PAS data was used to directly compare the GEM observations and model outputs at the respective PAS sites.
+\end{flushleft}
+
+
+
 
 
 %%----------------------------RESULTS AND DISCUSSION---------------------------
@@ -116,14 +127,14 @@ The hourly measurements of total gaseous mercury (TGM) in the atmosphere in \nan
 \begin{figure}[H]
 \centering
   \includegraphics[width=0.7\textwidth]{templates/figures/Passive_Samplers/07-27-22_pas_vs_model_Hg0-per-year_001.pdf}
-  \caption{Annual average Hg concentration on the surface in Latin America averaged. The background is the annual average \hgc produced by the \on for 2015. The circles with the black outline are the annual average GEM concentration from the PAS sites, while the circles with the purple outline are the annual average TGM concentrations from the GMOS sites.}
+  \caption{Annual average Hg concentration on the surface in Latin America averaged. The background is the annual average \hgc produced by the \on for 2015. The circles are the annual average GEM concentration from the PAS sites, while the triangles are the annual average TGM concentrations from the GMOS sites.\cite{quant_measuring_2021,sprovieri_atmospheric_2016,koenig_seasonal_2021}}
   \label{fig:06-12-22_pas_vs_model_Hg0-per-year_001}
   
   
 \end{figure}
 \FloatBarrier
 \begin{flushleft}
- Recent publications analyzing global Hg monitoring data highlight the existence of an interhemispheric gradient of Hg where Hg concentration in the southern hemisphere is lower than Hg concentration in the northern hemisphere\cite{sprovieri_atmospheric_2016}. This gradient is evident in the simulated  The comparison between the modeled concentration in the atmosphere and the PAS data corroborated the finding that the GEOS-Chem model overestimated the observed concentrations in the atmosphere, as seen in Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001} which shows the modeled (blue circles) and observed (red circles) annual average \hg plotted as a function of latitude. The observation error bars represent the replicate precision of the observations, while the model error bars represent the 95\textsuperscript{th} bootstrap confidence interval for the mean annual \hg. Moreover, the PAS observations show high variability as you move from South to North, while the model has low variability and an increasing trend.  
+ Recent publications analyzing global Hg monitoring data highlight an observed interhemispheric gradient of Hg where Hg concentration in the southern hemisphere is lower than Hg concentration in the northern hemisphere\cite{sprovieri_atmospheric_2016}. This gradient is evident in the simulated background annual average \hg concentration as seen in Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_001}. Moreover, most of the GMOS sites validate the modeled interhemispheric gradient except the Chalcataya GMOS site. The model matches the PAS GEM measurement at Chalcataya. This may be explained by the fact that the GMOS Chalcataya Site is a high-altitude site where the Hg concentration was measured at 5340 m above sea level, yet the modeled background shown in Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_001} is the Hg annual average on the surface. Compared with PAS data, the GEOS-Chem model overestimates atmospheric concentrations. Inland sites exhibit this phenomenon more than those located along the coast. There is a difference between the model and the inland PAS sites, especially those in the Amazon region because this version of the GEOS Chem model underestimates Hg uptake by vegetation. Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001} which shows the modeled (blue circles) and observed (red circles) annual average \hg plotted as a function of latitude clearly indicates the interhemispheric gradient observed in GEOS-Chem. The observation error bars represent the replicate precision of the observations, while the model error bars represent the 95\textsuperscript{th} bootstrap confidence interval for the mean annual \hg. As opposed to the GMOS sites, where GEOS-Chem overestimates the concentrations at all sites, GEOS-Chem only overestimates the concentrations at 15 of the PAS sites, and four of these sites are within the error bars. Evident on Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001}  is that \gc underestimates Hg concentrations at low latitudes and overestimates those at high latitudes. However, this trend is addressed by the vegetation uptake argument since the Amazon forest is in the northern latitude of Latin America.
 \end{flushleft}
 
 \begin{figure}[H]
@@ -135,7 +146,9 @@ The hourly measurements of total gaseous mercury (TGM) in the atmosphere in \nan
 \end{figure}
 \FloatBarrier
 \begin{flushleft}
-A striking trend in most plots of the observed vs modeled Hg concentration in Figure \ref{fig:GMOSvsGC} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time-based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest, but the Niew Nickerie and Manaus sites had the most minor data records at 215 days and 100 days, respectively, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
+    \gcs overestimation of Hg concentration in the Amazon region observed above was also addressed in Feinberg et al. (2022), who compared simulations with litterfall, throughfall, and flux tower measurements from 93 forested sites to evaluate vegetation as a Hg sink. According to their results, the \gc version, 12.8 underestimates \hg dry deposition, which may explain why measurements of Hg concentration in Latin America were lower than predicted by \gc. 
+    
+    % Furthermore, the PAS measurements, as seen in Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_001} were higher in most of the eastern coastal regions and in the northwestern coastal regions. These high values result from the PASs being placed near populated areas where the Hg background in the atmosphere may also be influenced by Hg emission sources such as power generation and ASGM. At the Amazon sites, however, low GEM measurements highlight the importance of vegetation as a Hg sink. 
 \end{flushleft}
 % \begin{table}[H]
 % \captionof{table}{The comparison of the model predictions of the average Hg concentration for the available measurement period}
@@ -158,6 +171,23 @@ A striking trend in most plots of the observed vs modeled Hg concentration in Fi
 % \end{tabular}}
 
 % \end{table}
+\subsection{Modeled vs Observed Temporal Trends}
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/GMOS_Sites.pdf}
+\centering
+\captionof{figure}{Time series plots of the observed TGM concentrations at different GMOS sites in red with the corresponding modeled concentration in blue and the associated ASGM contribution in green. Except for the CHC site, where the data are from July 2014 and January 2016, the available data and corresponding model outputs were plotted between January 2013 and January 2016.}
+\label{fig:GMOSvsGC}
+\end{figure}
+\FloatBarrier
+
+
+\begin{flushleft}
+
+
+ This study also compared observed and modeled data on a daily resolution as seen on Figure \ref{fig:GMOSvsGC}, which shows the time series of the modeled \hgc in the atmosphere alongside the observed Hg and the simulated ASGM contribution to the atmospheric Hg concentration at the GMOS sites. Evidently, the \gc model version used in this analysis overestimated the concentration of Hg on most days.   is the low predicted ASGM contribution at  four of the GMOS sites in contrast to the variability that closely matches the observed variability at the Chalcataya (CHC) site. A plausible explanation of models predicted ASGM contribution to the \hg at the GMOS location might be attributed to the CHC site's proximity to the Madre de Dios region in Peru, a known source of enormous ASGM Hg emissions. 
+\end{flushleft}
+
+
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/gmos_sites_stats.pdf}
 \centering
@@ -165,22 +195,8 @@ A striking trend in most plots of the observed vs modeled Hg concentration in Fi
 \label{fig:gmos_sites_stats}
 \end{figure}
 \FloatBarrier
-
-
 \begin{flushleft}
-Another significant aspect of the model observation comparison on Figure \ref{fig:GMOSvsGC} is the low predicted ASGM contribution at  four of the GMOS sites in contrast to the variability that closely matches the observed variability at the Chalcataya (CHC) site. A plausible explanation of models predicted ASGM contribution to the \hg at the GMOS location might be attributed to the CHC site's proximity to the Madre de Dios region in Peru, a known source of enormous ASGM Hg emissions. 
-\end{flushleft}
-
-\begin{figure}[H]
-\includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/GMOS_Sites.pdf}
-\centering
-\captionof{figure}{Time series plots of the observed TGM concentrations at different GMOS sites in red with the corresponding modeled concentration in blue and the associated ASGM contribution in black. Available observations and corresponding model output between January 2013 and January 2015 were plotted except for the CHC site, whose data is from July 2014 and January 2016}
-\label{fig:GMOSvsGC}
-\end{figure}
-\FloatBarrier
-
-\begin{flushleft}
-Moreover, the Niew Nickerie and Manaus sites had the worst mean and variability relationship with the modelled \hg as seen on Table \ref{tab:modelvsobs metrics}. Even though the GEOS-Chem model overestimates the mean concentration over a one-year period of measurement except for the Manaus site, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}, the estimates for the mean concentration at Sisal and Calhau are within a 10\% margin as shown in Table \ref{tab:modelvsobs metrics}. The model's deficiency in predicting the mean may result from the model's poor parameterization of processes such as dry deposition and wet deposition. Poor parameterizations of ASGM Hg emissions in the model may also  contribute to the poor model skill in predicting the mean. Furthermore, the time series plot of the Hg concentrations at CHC shows a general upward trend that is not represented in the other observations and the model. 
+Moreover, the Nieuw Nickerie and Manaus sites had the worst mean and variability relationship with the modeled \hg as seen in. Even though the GEOS-Chem model overestimates the mean concentration over a one-year period of measurement except for the Manaus site, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}, the estimates for the mean concentration at Sisal and Calhau are within a 10\% margin as shown in Table \ref{tab:modelvsobs metrics}. The model's deficiency in predicting the mean may result from the model's poor parameterization of processes such as dry deposition and wet deposition. Poor parameterizations of ASGM Hg emissions in the model may also  contribute to the poor model skill in predicting the mean. Furthermore, the time series plot of the Hg concentrations at CHC shows a general upward trend that is not represented in the other observations and the model. 
 \end{flushleft}
 
 
@@ -189,9 +205,13 @@ Moreover, the Niew Nickerie and Manaus sites had the worst mean and variability 
 \includegraphics[width=0.8\textwidth]{templates/figures/GMOS_Sites/gmos_sites_scatter.pdf}
 \centering
 \captionof{figure}{Time series plots of the observed TGM concentrations at different GMOS sites in red with the corresponding modeled concentration in blue and the associated ASGM contribution in black. Available observations and corresponding model output between January 2013 and January 2015 were plotted except for the CHC site, whose data is from July 2014 and January 2016}
-\label{fig:GMOSvsGC}
+\label{fig:gmos_sites_scatter}
 \end{figure}
 \FloatBarrier
+\end{flushleft}
+
+\begin{flushleft}
+A striking trend in most plots of the observed vs modeled Hg concentration in Figure \ref{fig:gmos_sites_scatter} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time-based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest, but the Niew Nickerie and Manaus sites had the most minor data records at 215 days and 100 days, respectively, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
 \end{flushleft}
 
 % \begin{table}[H]
@@ -224,7 +244,7 @@ Moreover, the Niew Nickerie and Manaus sites had the worst mean and variability 
 
 
 \begin{flushleft}
-GEOS-Chem's poor predictive capacity observed above is also addressed in Feinberg et al. (2022) where we evaluated atmospheric Hg uptake by vegetation in \gc by constraining vegetation as a Hg sink through a comparison of simulations with a compiled database of litterfall, throughfall and flux tower measurements from 93 forested sites. We found that the \gc version, 12.8  underestimated dry deposition of \hg, which may explain why the observed Hg from the measurements of Hg in the atmosphere at different sites in Latin America was lower than the concentration predicted by the model. Recent studies evaluating the global biogeochemical cycle of Hg argue that Hg concentrations in the atmosphere exhibit an inter-hemispheric gradient from the southern to the northern hemisphere. The annual average \hg modelled by \gc seems to follow the proposed gradient as seen on Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_by-latitude_001}. Furthermore, the PAS measurements, as seen in Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_001} were higher in most of the eastern coastal regions and in the northwestern coastal regions. These high values are the result of the fact that the PASs were placed near populated areas where the Hg background in the atmosphere may also be influenced by Hg emission sources such as power generation and ASGM.
+
 
 \end{flushleft}
 
