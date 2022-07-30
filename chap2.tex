@@ -112,7 +112,7 @@ Bariloche, Agentina         & BAR       & -41.13    & -72.42    &    Mountain si
     In contrast to active Hg monitoring equipment such as those used in the GMOS network, which can be prohibitively expensive, energy-intensive, and require extensive training, passive air samplers (PAS) require no energy to operate and do not require any special handling skills \cite{quant_measuring_2021}. Furthermore, PAS can be easily deployed for long periods. This combination of attributes of PAS allows more sampling sites to be studied over extended periods enabling significant average GEM concentration estimates to be obtained. PAS monitoring is integral in informing the effectiveness evaluation of the MC\cite{gustin_measuring_2015,unep_guidance_2021}. Quant et al.,(2021) published a detailed analysis of the PAS sites in Latin America, and their respective locations are shown by the blue circles in Figure \ref{fig:Latam_Passive_SamplerSites}. 
 \end{flushleft}
 
-\subsection{Observation Data Sourcing Manipulation}
+\subsection{Observation Data Sourcing and Manipulation}
 \begin{flushleft}
   Additionally, average annual GEM concentration data for 27 sites in Latin America was obtained from Quant et al.,(2021), which included information about the coordinates of the deployment sites and the period of measurement \cite{quant_measuring_2021}. Available Hg observation data from the GMOS stations on Figure  \ref{fig:Latam_Passive_SamplerSites} was obtained from the GMOS online database (http://www.gmos.eu), as well as published studies about the Hg monitoring data from the different sites  \cite{koenig_seasonal_2021}. The data sets were pre-processed based on the information in Sproviery et al.,(2016) and Koenig et al.,(2021) and daily and annual averages to compare with the \gc output\cite{koenig_seasonal_2021,sprovieri_atmospheric_2016}. The PAS data was compared to the modeled annual average Hg concentration for 2015 to evaluate, and the coordinate information from the PAS data was used to directly compare the GEM observations and model outputs at the respective PAS sites.
 \end{flushleft}
@@ -147,31 +147,10 @@ Bariloche, Agentina         & BAR       & -41.13    & -72.42    &    Mountain si
 \FloatBarrier
 \begin{flushleft}
     \gcs overestimation of Hg concentration in the Amazon region observed above was also addressed in Feinberg et al. (2022), who compared simulations with litterfall, throughfall, and flux tower measurements from 93 forested sites to evaluate vegetation as a Hg sink. According to their results, the \gc version, 12.8 underestimates \hg dry deposition, which may explain why measurements of Hg concentration in Latin America were lower than predicted by \gc. 
-    
-    % Furthermore, the PAS measurements, as seen in Figure \ref{fig:06-12-22_pas_vs_model_Hg0-per-year_001} were higher in most of the eastern coastal regions and in the northwestern coastal regions. These high values result from the PASs being placed near populated areas where the Hg background in the atmosphere may also be influenced by Hg emission sources such as power generation and ASGM. At the Amazon sites, however, low GEM measurements highlight the importance of vegetation as a Hg sink. 
+
 \end{flushleft}
-% \begin{table}[H]
-% \captionof{table}{The comparison of the model predictions of the average Hg concentration for the available measurement period}
-% \label{tab:ASGM_at_GMOS_annual_avs}
 
-% \centering
-% \resizebox{\textwidth}{!}{\begin{tabular}{lcccccc}
-%   \hline
-
-% GMOS & Observed Hg\textsuperscript{0} & Observation Standard & Base(ASGM=ON) Hg\textsuperscript{0} & Base(ASGM=ON) Standard  & ASGM Contribution  Hg\textsuperscript{0}   \\
-% Sit & (ng m$^{-3}$)/year             & Deviation ($\sigma$) & (ng m$^{-3}$)/year                   & Deviation ($\sigma$)      &(ng m$^{-3}$)/year\\
-                        
-% \hline
-% Sisal           &   1.19    & 0.14 & 1.27 & 0.05 & 0.12  \\
-% Calhau          &   1.22    & 0.12 & 1.30 & 0.04 & 0.11  \\
-% Niew Nickerie   &   1.11    & 0.23 & 1.41 & 0.06 & 0.25  \\
-% Manaus          &   1.49    & 0.31 & 1.27 & 0.09 & 0.23  \\
-% Chalcataya      &   0.90    & 0.16 & 1.20 & 0.14 & 0.28  \\
-%   \hline
-% \end{tabular}}
-
-% \end{table}
-\subsection{Modeled vs Observed Temporal Trends}
+\subsection{Modeled vs. Observed Temporal Trends}
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/GMOS_Sites.pdf}
 \centering
@@ -184,19 +163,19 @@ Bariloche, Agentina         & BAR       & -41.13    & -72.42    &    Mountain si
 \begin{flushleft}
 
 
- This study also compared observed and modeled data on a daily resolution as seen in Figure \ref{fig:GMOSvsGC}, which shows the time series of the modeled \hgc in the atmosphere alongside the observed Hg and the simulated ASGM contribution to the atmospheric Hg concentration at the GMOS sites. The \gc model version used in this study overestimated the concentration of Hg on most days. However, the \gc estimated average \hgc over the available observation period was within one standard deviation of the observed Hg in most of the sites except for the Manaus and Nieuw Nickerie sites. \gcs overestimates the observed GEM concentrations at the Manaus and Bariloche master sites by over 25\%  and the GEM concentration at Nieuw Nickerie by 20\%, which may be indicative of poor parameterization of GEM in the model. Notably, the overestimation of GEM concentrations in Manaus indicates the model's poor parameterization of Hg plant uptake, as shown in Feinberg et al.(2022)\cite{feinberg_evaluating_2022}.
+ This study also compared observed and modeled data on a daily resolution as seen in Figure \ref{fig:GMOSvsGC}, which shows the time series of the modeled \hgc in the atmosphere alongside the observed Hg and the simulated ASGM contribution to the atmospheric Hg concentration at the GMOS sites. The \gc model version used in this study overestimated the concentration of Hg on most days. However, the \gc estimated average \hgc over the available observation period was within one standard deviation of the observed Hg in most of the sites except for the Manaus and Nieuw Nickerie sites. \gcs overestimates the observed GEM concentrations at the Manaus and Bariloche master sites by over 25\%  and the GEM concentration at Nieuw Nickerie by 20\%, which may be indicative of poor parameterization of GEM in the model. Moreover, the overestimation of GEM concentrations in Manaus further indicates the model's poor implementation of Hg plant uptake through dry deposition, as discussed in Feinberg et al.(2022)\cite{feinberg_evaluating_2022}.
 \end{flushleft}
 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/gmos_sites_stats.pdf}
 \centering
-\captionof{figure}{Bar chart comparing the modeled average Hg concentration  at the respective GMOS Sites}
+\captionof{figure}{Bar chart comparing the modeled and observed average Hg concentration at the respective GMOS Sites. The bars are annotated with the average Hg concentration values. Moreover, the error bars and the annotated value above the bars show the standard deviation in each data set. }
 \label{fig:gmos_sites_stats}
 \end{figure}
 \FloatBarrier
 \begin{flushleft}
-Moreover, Figure \ref{fig:GMOSvsGC} and Figure \ref{fig:gmos_sites_stats} clearly show that ASGMs modeled contribution is low in most sites except for Calcataya, Manaus, and Nieuw Nickerie. The model's behavior regarding the predicted ASGM contribution at these sites is not surprising since these sites are in countries estimated to be among the top 10 Latin American ASGM Hg emitters in the ASGM emission inventory used for \gc simulation. Even though the model estimates a notable ASGM contribution at the MAsnaus and Nieuw Nickerie sites, the sites lack enough data to characterize the ASGM contribution to the Hg concentration fully. However, the ASGM predicted contribution at Chalcataya 
+Moreover, Figure \ref{fig:GMOSvsGC} and Figure \ref{fig:gmos_sites_stats} clearly show that ASGMs modeled contribution is low in most sites except for Calcataya, Manaus, and Nieuw Nickerie. The model's behavior regarding the predicted ASGM contribution at these sites is not surprising since these sites are in countries estimated to be among the top 10 Latin American ASGM Hg emitters in the ASGM emission inventory used for \gc simulation. Even though the model estimates a notable ASGM contribution at the Manaus (18\%) and Nieuw Nickerie (16\%) sites, the sites lack enough data to fully characterize the ASGM contribution to the Hg concentration over the long term. However, the predicted  ASGM Hg contribution at Chalcataya is the highest at 23\% as seen in Table \ref{tab:model_percentage_overestimation_of_mean}. 
 \end{flushleft}
 
 \begin{table}[H]
@@ -219,46 +198,24 @@ Chalcataya     &     1.04               &             1.21               & 17   
 Bariloche      &     0.71               &             0.9                & 27                                   & 6 \\
   \hline
 \end{tabular}}
-
 \end{table}
 
 
 \begin{flushleft}
-  \begin{figure}[H]
-\includegraphics[width=0.8\textwidth]{templates/figures/GMOS_Sites/gmos_sites_scatter.pdf}
+ Correlations across the time series in Fig.\ref{fig:GMOSvsGC} between observations and the model are shown in Fig. \ref{fig:gmos_sites_scatter}. The general observation is that model poorly matched the observations (mild and even flat slope)  and shallow $r^2$ values. The low correlations between the model and observations may be attributed to poor vegetation uptake, which has already been discussed\cite{feinberg_evaluating_2022}. Moreover, the poor parameterizations of emissions in the model may reduce the extent to which the model recreates the observed atmospheric Hg concentrations. 
+\end{flushleft}
+ \begin{figure}[H]
+\includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/gmos_sites_scatter.pdf}
 \centering
-\captionof{figure}{Time series plots of the observed TGM concentrations at different GMOS sites in red with the corresponding modeled concentration in blue and the associated ASGM contribution in black. Available observations and corresponding model output between January 2013 and January 2015 were plotted except for the CHC site, whose data is from July 2014 and January 2016}
+\captionof{figure}{Scatter plots of the modeled Hg concentration as a function of the observed concentration. The red line is used to investigate the extent of the linear relationship between the modeled and observed Hg concentrations}
 \label{fig:gmos_sites_scatter}
 \end{figure}
 \FloatBarrier
-\end{flushleft}
-
-\begin{flushleft}
-A striking trend in most plots of the observed vs. modeled Hg concentration in Figure \ref{fig:gmos_sites_scatter} is the GEOS-Chem model's general overestimation of the Hg concentration and mismatch in the variability. The observed average daily TGM concentration at the GMOS sites (red line) is compared to the modeled \on average daily \hg (blue line) and the ASGM contribution (black line). The different Hg concentrations were plotted as a function of time-based on the availability of data records between 2012 and 2016. None of the sites had a continuous data set that spanned the entire period of interest. Still, the Nieuw Nickerie and Manaus sites had minor data records at 215 days and 100 days, respectively, as seen in Table \ref{tab:ASGM_at_GMOS_annual_avs}.   
-\end{flushleft}
-
-\begin{flushleft}
- 
-\end{flushleft}
-
-
-\subsection{Passive Sampler Observations vs. GEOS-Chem}
-
-
-\begin{flushleft}
-
-
-\end{flushleft}
-
-
-
-
-
-
-
-
-
 
 
 \section{Conclusion}
 
+\begin{flushleft}
+For this study, we compiled the atmospheric Hg measurements from six GMOS sites across Latin America discussed in \cite{koenig_seasonal_2021,sprovieri_atmospheric_2016}. Additionally, we gathered annual average GEM measurements from 27 PAS sites across Latin America, published in Quant et al.,(2021). These data on the measured atmospheric GEM and TGM concentration in Latin America were compared with \hgc simulated by the GEOS-Chem global Hg model with the oxidation scheme explained in Horowitz et al.,(2017) to examine spatiotemporal trends and test for evidence of ASGM contributions to measured Hg. A relatively weak relationship was found between the observed mercury species (GEM and TGM) and those in the /on, demonstrating a need for an improved understanding of fundamental chemistry in the \gc model.
+
+\end{flushleft}
