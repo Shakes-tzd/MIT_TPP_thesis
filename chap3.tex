@@ -1,4 +1,4 @@
-\chapter{Top-down Constraints on Atmospheric Mercury Emissions from ASGM Activities}
+\chapter{Top-down Constraints on Atmospheric Mercury Emissions from ASGM Activities}\label{Chapter3}
 \section{Background}
 \begin{flushleft}
 
@@ -29,7 +29,7 @@ In this chapter, I apply a top-down approach at a regional scale to estimate ASG
 \begin{flushleft}
 
 
-Globally gridded emissions inventories such as those shown in Figure \ref{fig:Hg_inventories} are a critical input to CTMs such as\gc. Figure \ref{fig:Hg_inventories} shows the distribution of Peruvian anthropogenic Hg emission estimates by different global inventories \cite{united_nations_environment_programme_technical_2019,steenhuisen_development_2019,muntean_evaluating_2018,streets_global_2019}. The plot on the right shows how anthropogenic Hg emissions were distributed in the  Streets et al. 2019 Hg emissions inventory\cite{streets_global_2019}. They analyzed the global and regional trends in anthropogenic Hg releases to the atmosphere between 2010 and 2015 and the associated trends in modeled and measured Hg concentrations at sites around the world. Their Peru total Hg emissions estimate was about 40 tonnes per year. The plot in the middle shows how anthropogenic Hg emissions were distributed in the EDGAR ASGM Hg emissions inventory\cite{muntean_evaluating_2018}. This global mercury emissions inventory includes emissions from all key mercury emitting sources, and Peru's total Hg emissions estimate was about 26 tonnes per year. Finally, the GMA 2018 ASGM Hg emissions estimates for 2015 are shown on the right. The Hg emissions were distributed by assigning emission estimates to geo-located point sources, using reported emissions information where available, and otherwise assigning a modeled emission to the point. Emissions that could not be assigned to point sources were distributed using sector-specific proxies. The ASGM proxies for ASGM Hg emissions in Peru were the locations of legal mining concessions and the global alluvial gold map. This inventory estimated that ASGM was responsible for about 110 tonnes of emissions per year in Peru. The GMA 2018 inventory is used in all the GEOS-Chem simulations conducted in this study. This inventory was used because it was more representative of the ASGM emissions than the other two inventories, as the total Hg emissions are compatible with bottom-up baseline ASGM Hg emissions. ASGM emissions in this inventory were distributed based on a system that uses a probability approach to estimate ASGM activity and then distributes the emission estimate according to that probability\cite{steenhuisen_development_2019}. The global alluvial gold map and a (gold) mining concessions  \href{(https://data.globalforestwatch.org/search?collection=Dataset&q=mining)}{data set} were used to distribute ASGM emissions for Peru. 
+Globally gridded emissions inventories such as those shown in Figure \ref{fig:Hg_inventories} are a critical input to CTMs such as\gc. Figure \ref{fig:Hg_inventories} shows the distribution of Peruvian anthropogenic Hg emission estimates by different global inventories \cite{united_nations_environment_programme_technical_2019,steenhuisen_development_2019,muntean_evaluating_2018,streets_global_2019}. The plot on the right shows how anthropogenic Hg emissions were distributed in the  Streets et al. 2019 Hg emissions inventory\cite{streets_global_2019}. They analyzed the global and regional trends in anthropogenic Hg releases to the atmosphere between 2010 and 2015 and the associated trends in modeled and measured Hg concentrations at sites around the world. Their Peru total Hg emissions estimate was about 40 tonnes per year. The plot in the middle shows how anthropogenic Hg emissions were distributed in the EDGAR ASGM Hg emissions inventory\cite{muntean_evaluating_2018}. This global mercury emissions inventory includes emissions from all key mercury emitting sources, and Peru's total Hg emissions estimate was about 26 tonnes per year. Finally, the GMA 2018 ASGM Hg emissions estimates for 2015 are shown on the right. The Hg emissions were distributed by assigning emission estimates to geo-located point sources, using reported emissions information where available, and otherwise assigning a modeled emission to the point. Emissions that could not be assigned to point sources were distributed using sector-specific proxies. The ASGM proxies for ASGM Hg emissions in Peru were the locations of legal mining concessions and the global alluvial gold map. This inventory estimated that ASGM was responsible for about 110 tonnes of annual emissions in Peru. The GMA 2018 inventory is used in all the GEOS-Chem simulations conducted in this study. This inventory was used because it was more representative of the ASGM emissions than the other two inventories, as the total Hg emissions are compatible with bottom-up baseline ASGM Hg emissions. ASGM emissions in this inventory were distributed based on a system that uses a probability approach to estimate ASGM activity and then distributes the emission estimate according to that probability\cite{steenhuisen_development_2019}. The global alluvial gold map and a (gold) mining concessions  \href{(https://data.globalforestwatch.org/search?collection=Dataset&q=mining)}{data set} were used to distribute ASGM emissions for Peru. 
 \end{flushleft}
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{templates/figures/Peru_Maps/Hg_inventories.pdf}
@@ -88,7 +88,7 @@ Spun                        & 2.0$\times$2.5        & Emissions from the \gc gri
 \newpage
 \subsection{Simulated Atmospheric Mercury Concentration Signals}
 \begin{flushleft}
-The relationship between the \hg emissions from a specific grid box and the \gc simulated atmospheric \hg concentration at distant points from the emissions source is assumed to be defined by a linear function. This means that an increase in emissions is expected to result in an increase in the \hg concentration. Consequently, the relationship between emissions and concentrations can be represented by the following equation:
+The relationship between the \hg emissions from a specific grid box and the \gc simulated atmospheric \hg concentration at distant points from the emissions source is assumed to be defined by a linear function. This means that an increase in emissions is expected to increase the \hg concentration. Consequently, the relationship between emissions and concentrations can be represented by the following equation:
 
 
 \begin{equation}
@@ -102,7 +102,7 @@ where:
     \item [$region$] is the location of the emission source within the case study region.
     \item [$Hg^0_{sig(region)}$] is the simulated \hg concentration at the observation site due to $m_{(region)}$ at the grid box in the specific $region $ of interest.
     \item [$Hg_{m_0}$] is the Hg concentration  at the observation site generated by the Base (ASGM =ON) simulation. 
-    \item [$Hg_{m_1}$] is the Hg concentration  at the observation site generated by the $i^{th}$ region simulation $i$=Mdd,Apr,Aqp,Npun,Spun. 
+    \item [$Hg_{m_1}$] is the Hg concentration  at the observation site generated by the $i^{th}$ region simulation $i$=Mdd,Apr, Aqp,Npun,Spun. 
     \item [$m_1$] is the amount of emissions in Mega grams after scaling the emissions from a specific grid box.
     \item [$m_0$] is the amount of emissions in Mega grams before scaling the emissions from a specific grid box.
 \end{description}
@@ -148,29 +148,32 @@ TGM and GEM observation data from different locations in Latin America were anal
 \FloatBarrier
 \begin{flushleft}
 
-The detailed characteristics of the observations over this measurement period were described in Koenig et al. (2020); hence our analysis focused on using the observation TGM data to evaluate the performance of the GEOS-Chem model in predicting the \hg based on the input \hg emission inventories. As shown in Figure \ref{fig:chc_time_series}, the TGM concentration at CHC showed an upward trend, which Koenig et al. (2021) attribute to El Ni\~no-Southern Oscillation (ENSO)\cite{koenig_seasonal_2021}. As a result, they categorized the measured TGM concentrations in the atmosphere at the CHC site as normal conditions (NC), 2014-07 to 2015-05, and ENSO conditions 2015-06 to 2016-01. To reduce the number of records associated with ENSO, I limited my analysis to one year's worth of data from 2014-07 to 2015-07.
+The detailed characteristics of the observations over this measurement period were described in Koenig et al. (2020); hence our analysis focused on using the observation TGM data to evaluate the performance of the GEOS-Chem model in predicting the \hg based on the input \hg emission inventories. As shown in Figure \ref{fig:chc_time_series}, the TGM concentration at CHC showed an upward trend, which Koenig et al. (2021) attribute to El Ni\~no-Southern Oscillation (ENSO)\cite{koenig_seasonal_2021}. As a result, they categorized the measured TGM concentrations in the atmosphere at the CHC site as normal conditions (NC), 2014-07 to 2015-05, and ENSO conditions from 2015-06 to 2016-01. To reduce the number of records associated with ENSO, I limited my analysis to one year's worth of data from 2014-07 to 2015-07.
 \end{flushleft}
 
-\subsection{Markov Chain Monte Carlo}
-
+\subsection{ Inverse Modelling with Markov Chain Monte Carlo}
 \begin{flushleft}
-The Markov-Chain Monte Carlo (MCMC) is a valuable sampling method for fitting models to data\cite{hogg_data_2018}. We apply the MCMC to constrain ASGM Hg emissions from the case study region in Peru.  The model is generated by a set of parameters and emissions, and we aim to sample from the parameters that best fit our data. The MCMC compares the modeled concentrations to the observed data using metrics such as the \nft confidence interval, mean, and the \iq. The MCMC models given data by sampling around optimum values from the posterior distribution. The MCMC is a Bayesian approach; hence it requires the definition of priors on the parameters of interest. The priors encode information that we already know of the system. The probability of the model given the observed data is given by the posterior probability, $P(\theta|D)$, which is calculated using the Bayes theorem:
+    Inverse modeling is described by Brasseur, and Jacob \cite{brasseur_modeling_2017} as a method for quantifying variables that drive a physical system using observations. Accordingly, the variables are statistically optimized based on the observational and other information available. Variables we wish to optimize are called state variables and assembled into a state vector $x$. In the same way, the observations are assembled into an observation vector $y$. The forward model $F$ of the physical system describes the relationship between $x$ and $y$:
 
-\begin{equation}
-\label{bayes_eq}
-P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}
+    \begin{equation}
+\label{inverse_model}
+y=F(x,p) + \epsilon_0
 \end{equation}
-where:
-\end{flushleft}
-
+where:\\
 \begin{description}[leftmargin=!,labelwidth={3 em}]
-    \item [$P(D|\theta)$] is the likelihood which is the probability of the data given the model
-    \item [$P(\theta)$] is the prior, which is the probability of the model and 
-    \item [$P(D)$] is the evidence which is the probability of the data.
+    \item [$p$] contains all variables in the model that we will not optimize as part of the inversion
+    \item [$\epsilon_0$] a vector of observations errors, which includes errors from measurements, the forward model, and model parameters 
 \end{description}
+ Forward models describe the effects of the system as functions of the cause $x$, usually by using equations that describe the system's physics. The cause ($x$) can be quantified via inversion of the model based on the effect ($y$). Moreover, $x$ is estimated with some statistical error when $\epsilon_0 \neq 0$ is present. The solution for $x$ is called the optimal estimate, posterior estimate, or retrieval. \cite{brasseur_modeling_2017}. 
+ \end{flushleft}
 
 \begin{flushleft}
-The MCMC enables the estimation of the sampling of the posterior distribution, which is the left-hand side of Equation~\ref{bayes_eq}. The MCMC is set up by following a set of steps that include defining a function that outputs a model given a set of input parameters and establishing an ensemble of walkers defined by a $\theta$ vector that contains a set of parameters from the model generating function. For the model generating function, the Hg concentration at a particular grid box is defined as a linear combination of Hg concentration signals from the case study region and the baseline Hg concentration produced by the \on as shown in the Equation \ref{Hg_conc} below:
+    The uncertainty in obtaining $x$ from $y$ requires us to consider constraints on the value of $x$ called priors that could reduce the error on the optimal estimate.  We generally use the prior estimate $x_A$ as a constraint, representing our best estimate of $x$ before the observations. It has some error $\epsilon_A$. As a result, the ideal estimate must consider the relative information given by the observations $y$ and the prior estimate $x_A$. The error statistics of the estimates $\epsilon_O$ and $\epsilon_A$. We can analyze the relative importance of observations and prior knowledge by using inverse modeling. In this way, it provides insight into the effectiveness of an observing system in constraining $x$\cite{brasseur_modeling_2017}.
+
+    \end{flushleft}
+
+\begin{flushleft}
+For this analysis, we use the measured Hg concentration (observation vector $y$) to constrain the  emissions from grid boxes in the case study region (state vector $x$). The forward model is given by the linear combination of the signals generated by the GEOS-Chem model as shown in Equation \ref{Hg_conc} below:
 
 \begin{align}
 \begin{split}\label{Hg_conc}
@@ -192,17 +195,17 @@ where:
 \end{description}
 
 \begin{flushleft}
-Each of the $Hg_{m(region)}$ terms of Equation \ref{Hg_conc} represent signals from the different departments are calculated using Equation~\ref{doublingSig}. The $m_(region)$ terms are the only unknowns and the equation can be expanded to isolate the terms with $m_(region)$, which is the parameter we are optimizing for in the MCMC method. The expanded form of Equation \ref{Hg_conc} is shown below:
+Each of the $Hg_{m(region)}$ terms of Equation \ref{Hg_conc} represent signals from the different departments are calculated using Equation~\ref{doublingSig} an the form the parameter vector $p$. The $m_{(region)}$ terms are the only unknowns and the equation can be expanded to isolate the terms with $m_{(region)}$, which is the parameter we are optimizing for in the inverse modeling method. The expanded form of Equation \ref{Hg_conc} is shown below:
 
 \begin{align}
-\begin{split}\label{Cs36PoGd2l}
+\begin{split}\label{Hg_cons_expanded_form}
 Hg_{conc}={}& (m_{(MdD)}Hg_{sig_{(MdD)}} -m_oHg_{sig_{(MdD)}})+ (m_{(S-Puno)}Hg_{sig_{(S-Puno)}} -m_oHg_{sig_{(S-Puno)}}) \\
             &+ (m_{(N-Puno)}Hg_{sig_{(N-Puno)}} -m_0Hg_{sig_{(N-Puno)}}) + (m_{(Apr)}Hg_{sig_{(Apr)}} -m_oHg_{sig_{(Apr)}}) \\
             &+ (m_{(Aqp)}Hg_{sig_{(Aqp)}} -m_oHg_{sig_{(Aqp)}})+Hg_{m_0}
 \end{split}
 \end{align}
 
-Since the values of $m_{(region)}$ are the parameters that we want to estimate using MCMC, they can be represented as $\theta_i=m_{(region)}, i=1$ and the other terms, including the background concentration, are combined into one constant, C:
+Since the values of $m_{(region)}$ are the state variable we want to estimate, they can be represented as $\theta_i=m_{(region)}, i=1$ and the other terms, including the background concentration, are combined into one constant, C:
 
 \begin{equation}
 \begin{aligned}
@@ -218,7 +221,25 @@ Hg_{conc} =\begin{bmatrix} C & Hg_{sig_{(MdD)}} & Hg_{sig_{(S-Puno)}} &Hg_{sig_{
 where $\theta_0=1$ and $Hg_{conc}$ is the modeled Hg concentration at the observation site of interest.
 \end{flushleft}
 
+
 \begin{flushleft}
+The Markov-Chain Monte Carlo (MCMC) is a valuable sampling method for fitting models to data\cite{hogg_data_2018}. We apply the MCMC to constrain ASGM Hg emissions from the case study region in Peru.  The model is generated by a set of parameters and emissions, and we aim to sample from the parameters that best fit our data. The MCMC compares the modeled concentrations to the observed data using metrics such as the \nft confidence interval, mean, and the \iq. The MCMC models given data by sampling around optimum values from the posterior distribution. The MCMC is a Bayesian approach; hence it requires the definition of priors on the parameters of interest. The priors encode information that we already know of the system. The probability of the model given the observed data is given by the posterior probability, $P(\theta|D)$, which is calculated using the Bayes theorem:
+
+\begin{equation}
+\label{bayes_eq}
+P(\theta|D)=\frac{P(D|\theta)P(\theta)}{P(D)}
+\end{equation}
+where:
+\end{flushleft}
+
+% \begin{description}[leftmargin=!,labelwidth={3 em}]
+%     \item [$P(D|\theta)$] is the likelihood which is the probability of the data given the model
+%     \item [$P(\theta)$] is the prior, which is the probability of the model and 
+%     \item [$P(D)$] is the evidence which is the probability of the data.
+% \end{description}
+
+\begin{flushleft}
+The MCMC enables the estimation of the sampling of the posterior distribution, which is the left-hand side of Equation~\ref{bayes_eq}. The MCMC is set up by following a set of steps that include defining a function that outputs a model given a set of input parameters and establishing an ensemble of walkers defined by a $\theta$ vector that contains a set of parameters from the model generating function.
 Next, the metrics being compared to their observed counterparts are calculated to be used in Equation \ref{model_definition} during the MCMC simulation. 
 \end{flushleft}
 
