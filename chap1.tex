@@ -6,12 +6,12 @@
 %% prompt when you run the file main.tex through LaTeX.
 
 \chapter{Introduction}
-Mercury (Hg) is a severe health hazard in the environment and for people, especially fetuses and young children\cite{gibb_mercury_2014}. The release of mercury into the atmosphere results from human activities and natural processes. Upon release, mercury moves between the air, soils, and waters until, eventually, it is removed from the system through burial in coastal and deep ocean sediments, lake sediments, and subsurface soils \cite{esdaile_mercury_2018}. Moreover, mercury can travel great distances when released into the atmosphere, contaminating ecosystems, fish, birds, mammals, and human food chains \cite{esdaile_mercury_2018}. Recent estimates, as seen in Figure \ref{fig:gma2018_hg-emissions_by-industry},  indicate that about 38\% of global Hg emissions come from ASGM, making it the largest source of Hg pollution to the atmosphere and hydrosphere around the world\cite{united_nations_environment_programme_technical_2019}. However, the amount of Hg released by ASGM activities and the extent to which it is transported regionally and globally is highly uncertain. This thesis examines how top-down emissions estimation techniques can help reduce the uncertainty in ASGM Hg estimates. First, I will briefly describe the Hg problem in ASGM. As a next step, I review the state of atmospheric Hg monitoring and modeling in regions where ASGM activities are prevalent. In addition, I use observed atmospheric Hg concentrations and atmospheric Hg predictions produced by the GEOS-Chem Model to estimate ASGM Hg emissions for a Peruvian region for the first time. Lastly, I synthesize the findings and make recommendations for policymakers to use monitoring and modeling to better understand ASGM Hg emissions.
+Mercury (Hg) is a severe health hazard in the environment and for people, especially fetuses and young children\cite{gibb_mercury_2014}. The release of mercury into the atmosphere results from human activities and natural processes. Upon release, mercury moves between the air, soils, and waters until, eventually, it is removed from the system through burial in coastal and deep ocean sediments, lake sediments, and subsurface soils \cite{esdaile_mercury_2018}. Moreover, mercury can travel great distances when emitted into the atmosphere, contaminating ecosystems, fish, birds, mammals, and human food chains \cite{esdaile_mercury_2018}. Recent estimates, as seen in Figure \ref{fig:gma2018_hg-emissions_by-industry},  indicate that about 38\% of global Hg emissions come from ASGM, making it the largest source of Hg pollution to the atmosphere and hydrosphere around the world\cite{united_nations_environment_programme_technical_2019}. However, the amount of Hg released by ASGM activities and the extent to which it is transported regionally and globally is highly uncertain. This thesis examines how top-down emissions estimation techniques can help reduce the uncertainty in ASGM Hg estimates. First, I will briefly describe the Hg problem in ASGM. As a next step, I review the state of atmospheric Hg monitoring and modeling in regions where ASGM activities are prevalent. In addition, I use observed atmospheric Hg concentrations and atmospheric Hg predictions produced by the GEOS-Chem Model to come up with the first ever top-down estimates of ASGM Hg emissions for a region in Peru. Lastly, I synthesize the findings and make recommendations for policymakers to use monitoring and modeling to better understand ASGM Hg emissions. To comply with the Minamata Convention, I will use the term "Hg emissions" throughout this thesis to refer to Hg discharges into the atmosphere and "Hg releases" to refer to Hg discharges into the ground and water. "Hg discharge" will be used when referring to both emissions and releases.
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{templates/figures/07-24-22_gma2018_hg-emissions_by-industry.pdf}
   \centering
-  \caption[Pie chart showing the 2018 global mercury assessment (GMA 2018) ASGM \hg emission estimates for different sectors.]{ Pie chart showing the 2018 global mercury assessment (GMA 2018) ASGM \hg emission estimates for different sectors. ASGM is the sector with the highest Hg emissions (shown in orange) at 838 Mg, followed by industry sectors (shown in red) at 614 Mg, then fuel combustion (shown in blue) at 533 Mg, and finally, intentional use sectors excluding ASGM (show in green) at 239 Mg \cite{united_nations_environment_programme_technical_2019}.}
+  \caption[Pie chart showing the 2018 global mercury assessment (GMA 2018) ASGM Hg emission estimates for different sectors.]{ Pie chart showing the 2018 global mercury assessment (GMA 2018) ASGM Hg emission estimates for different sectors. ASGM is estimated to emit the most Hg emissions (shown in orange) at 838 Mg, followed by industry sectors (shown in red) at 614 Mg, then fuel combustion (shown in blue) at 533 Mg, and finally, intentional use sectors excluding ASGM (show in green) at 239 Mg \cite{united_nations_environment_programme_technical_2019}.}
   \label{fig:gma2018_hg-emissions_by-industry}
 \end{figure}
 \FloatBarrier
@@ -51,14 +51,14 @@ Moreover, countries are required to include in their NAPs baseline estimates the
 
 \section{Case Study Region}
 \begin{flushleft}
-Latin America has the highest average ratio of mercury losses to gold production at 4.63, according to Yoshimura et al.'s (2021) estimate. This means that for every gram of gold produced, 4.63 grams of Hg are lost (i.e. discharged to the environment). Africa and Asia have the lowest at 1.96 and 1.23, respectively. Moreover, the GMA 2018 reported that ASGM Hg emissions in Latin America were the highest \cite{united_nations_environment_programme_technical_2019}. Figure \ref{fig:global_asgm_emissions_above_a_tone_barchart} shows that 60\% of the top 10 ASGM Hg emitting countries in the world are in Latin America  \cite{united_nations_environment_programme_technical_2019}. The estimated amounts of ASGM Hg emissions from the different countries vary, and Figure \ref{fig:global_asgm_emissions_above_a_tone_barchart} is a bar chart that summarizes the GMA 2018 ASGM \hg emission estimates for all countries worldwide that have ASGM \hg emissions above 1 ton. The red bars highlight countries in Latin America in this group, while countries outside Latin America are shown in blue  \cite{united_nations_environment_programme_technical_2019}. However, atmospheric Hg data from Latin America are rare; hence Hg dynamics in the region are not well understood. 
+The estimated amounts of ASGM Hg emissions from the different countries vary. This is illustrated in Figure \ref{fig:global_asgm_emissions}, which is a map showing the GMA 2018 ASGM \hg emission estimates for 2015 for all countries worldwide that have ASGM \hg emissions \cite{united_nations_environment_programme_technical_2019}. Moreover, the GMA 2018 reported that ASGM Hg emissions in Latin America were the highest \cite{united_nations_environment_programme_technical_2019}. Figure \ref{fig:global_asgm_emissions} shows that Latin America has the highest concentration of countries have estimated ASGM Hg emissions above 40 tons/year \cite{united_nations_environment_programme_technical_2019}. Furthermore, Latin America has the highest average ratio of mercury losses to gold production at 4.63, according to Yoshimura et al.'s\cite{yoshimura_estimation_2021} estimate. This means that for every gram of gold produced, 4.63 grams of Hg are "lost" (i.e. discharged to the environment). Africa and Asia have the lowest at 1.96 and 1.23, respectively.  However, atmospheric Hg data from Latin America are rare; hence Hg dynamics in the region are not well understood. 
 \end{flushleft}
 
 \begin{figure}[H]
-  \includegraphics[width=\textwidth]{templates/figures/07-14-22_gma2018_top-asgm-emmiting-countries.pdf}
+  \includegraphics[width=\textwidth]{templates/figures/07-14-22_gma2018_asgm-emmiting-countries.pdf}
   \centering
-  \caption[Bar chart showing the GMA 2018 ASGM \hg emission estimates for all countries worldwide that have estimated ASGM \hg emissions above 1 ton]{Bar chart showing the GMA 2018 ASGM \hg emission estimates for all countries worldwide that have estimated ASGM \hg emissions above 1 Mg. The red bars highlight countries in Latin America \cite{united_nations_environment_programme_technical_2019}}
-  \label{fig:global_asgm_emissions_above_a_tone_barchart}
+  \caption[World map showing the GMA 2018 ASGM \hg emission estimates for all countries worldwide that have estimated ASGM \hg emissions]{World map showing the GMA 2018 ASGM \hg emission estimates for all countries worldwide that have estimated ASGM \hg emissions \cite{united_nations_environment_programme_technical_2019}.}
+  \label{fig:global_asgm_emissions}
 \end{figure}
 \FloatBarrier
 
@@ -71,12 +71,12 @@ The Madre de Dios region is estimated to be the source of the largest quantities
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{templates/figures/Peru_Maps/CasestudyRegion.pdf}
   \centering
-  \caption[Departments predicted to be the prominent sources of ASGM Hg releases in Peru]{Departments predicted to be the prominent sources of ASGM Hg releases according to the Artisanal Gold Council's  Inventory Report for the ASGM sector in Peru (2017)\cite{agc_reporte_2017} }
+  \caption[Peruvian departments studied in this thesis]{Peruvian departments studied in this thesis. Some of these departments were predicted to be the prominent sources of ASGM Hg releases according to the Artisanal Gold Council's  Inventory Report for the ASGM sector in Peru (2017)\cite{agc_reporte_2017}. }
   \label{fig:PeruCS}
 \end{figure}
 \FloatBarrier
 
-In Madre de Dios, Hg has been extensively studied in both people and the environment. This thesis project seeks to complement previous studies and distinguish itself  by investigating the extent to which the GEOS-Chem model can leverage existing measurements of Hg in the atmosphere to produce top-down estimates of ASGM Hg emissions from Madre de Dios and surrounding departments with reported ASGM activities.
+Environmental and human health effects of ASGM Hg pollution have been extensively studied in Madre de Dios. This thesis project seeks to complement previous studies and distinguish itself  by investigating the extent to which the GEOS-Chem model can leverage existing measurements of Hg in the atmosphere to produce top-down estimates of ASGM Hg emissions from Madre de Dios and surrounding departments with reported ASGM activities.
 
 \end{flushleft}
 \begin{flushleft}
@@ -86,7 +86,7 @@ In Madre de Dios, Hg has been extensively studied in both people and the environ
 \begin{enumerate}
   \item To what extent can regional atmospheric modeling and monitoring help reconcile the differences in the current global estimates of emissions and national emissions?
   \item How can regional monitoring networks improve the utility of models for evaluating the effectiveness of MCs?
-  \item How can governments and policy makers prioritize atmospheric modeling and monitoring to obtain actionable information about the effectiveness of Hg reduction measures?
+  \item Which atmospheric modeling and monitoring should be prioritized by governments and policy makers to obtain actionable information about Hg reductions?
 \end{enumerate}
 \end{flushleft}
 
@@ -94,7 +94,7 @@ In Madre de Dios, Hg has been extensively studied in both people and the environ
 \section{Organization}
  
 \begin{flushleft}
-  This introductory chapter has provided a general background on ASGM concerning Hg emissions and the extent of global efforts to protect people and the environment from the adverse effects of Hg pollution. Chapter 2 addresses the first thesis question by evaluating GEOS-Chem modeled atmospheric Hg concentrations across Latin America with observed Hg concentrations at various regional sites. The strengths and limitations of the GEOS-Chem model are highlighted, and strategies to improve the model's usefulness are discussed. Chapter 3 addresses the second question by presenting a method to produce top-down estimates of ASGM Hg emissions. Finally, chapter 4 presents policy recommendations and conclusions to address the third research question.  
+  This introductory chapter has provided a general background on ASGM concerning Hg emissions and the extent of global efforts to protect people and the environment from the adverse effects of Hg pollution. Chapter 2 compares the temporal and spatial characteristics of observed and modeled atmospheric Hg concentrations. It addresses aspects  of the first thesis question by evaluating GEOS-Chem modeled atmospheric Hg concentrations across Latin America with observed Hg concentrations at various regional sites. In chapter 3, a method is presented for estimating ASGM Hg emissions. Using atmospheric modeling and monitoring, it is demonstrated how different ASGM Hg emissions inventories can be reconciled, and how monitoring networks can enhance models' utility. Finally, chapter 4 presents policy recommendations and conclusions to address the third research question.
 \end{flushleft}
 
 
