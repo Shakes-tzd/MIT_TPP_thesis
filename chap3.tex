@@ -1,7 +1,7 @@
 \chapter{Top-down Constraints on Atmospheric Mercury Emissions from ASGM Activities}\label{Chapter3}
 To measure the effectiveness of mitigation and elimination strategies for reducing Hg pollution from ASGM, Hg emissions estimates will be compared to baseline estimates per Article 22 of the MC. The ASGM industry is often unregulated, with little government oversight and a limited amount of reliable data\cite{oneill_estimating_2017}.  Therefore, measurement of Hg use in the ASGM sector is difficult due to its complexity and largely informal nature.  Typically, finding reasonable estimates of ASGM Hg use, gold production, and staff requires extensive site visits, multiple interviews, observations, and measurements at ASGM sites\cite{oneill_estimating_2017}.
 \begin{flushleft}
-In this chapter, I apply a top-down approach at a regional scale to estimate ASGM Hg emissions (emission inversion) from Peru. As of now, there has been no scientific study using Hg atmospheric monitoring data and atmospheric models to provide top-down constraints for ASGM emissions. Section \ref{c3_methods} describes the overall methodology. I combine ground-based observations of atmospheric Hg from the case study region\cite{koenig_seasonal_2021}, a national inventory for Peru\cite{artisanal_gold_council_reporte_2017} and simulations with the GEOS-Chem global CTM. Reference (also known as a priori) emissions are from the GMA 2018\cite{united_nations_environment_programme_technical_2019,steenhuisen_development_2019}. The Markov Chain Monte Carlo is the inversion method used (Sect. \ref{c3_mcmc}) to obtain the optimized (a posteriori) emissions, considering uncertainties associated with reference and ground-based observations. Section \ref{c3_results} presents results and discussion. Comparisons of observations and model outputs are given in Sect. \ref{c3_obs_v_modifications}. The optimized emissions from 5 regions in Peru are shown in Sect.\ref{c3_mcmc_estimates}. Finally, I discuss the implications of the inversion results for providing baseline estimates of ASGM Hg emissions and summarize my conclusions (Sect. \ref{c3_conclusion}).
+In this chapter, we apply a top-down approach at a regional scale to estimate ASGM Hg emissions (emission inversion) from Peru. As of now, there has been no scientific study using Hg atmospheric monitoring data and atmospheric models to provide top-down constraints for ASGM emissions. Section \ref{c3_methods} describes the overall methodology. We combine ground-based observations of atmospheric Hg from the case study region\cite{koenig_seasonal_2021}, a national inventory for Peru\cite{artisanal_gold_council_reporte_2017} and simulations with the GEOS-Chem global CTM. Reference (also known as a priori) emissions are from the GMA 2018\cite{united_nations_environment_programme_technical_2019,steenhuisen_development_2019}. The Markov Chain Monte Carlo is the inversion method used (Sect. \ref{c3_mcmc}) to obtain the optimized (a posteriori) emissions, considering uncertainties associated with reference and ground-based observations. Section \ref{c3_results} presents results and discussion. Comparisons of observations and model outputs are given in Sect. \ref{c3_obs_v_modifications}. The optimized emissions from 5 regions in Peru are shown in Sect.\ref{c3_mcmc_estimates}. Finally, we discuss the implications of the inversion results for providing baseline estimates of ASGM Hg emissions and summarize conclusions (Sect. \ref{c3_conclusion}).
 
 \end{flushleft}
 \section{Background}
@@ -25,7 +25,7 @@ In contrast to bottom-up approaches, top-down emission estimation approaches com
 
 \section{Methods}\label{c3_methods}
 \begin{flushleft}
-    Chapter 2 of this thesis discusses the differences between the \gc model predictions of Hg at various monitoring stations and in Latin America. In one hypothesis, the difference between the model and the observations was attributed to how the emissions were parameterized in \gc. Generally, the input emissions in \gc are determined by the Hg inventory used; hence, I first evaluated the Hg inventory used in the simulations in Chapter 2 (GMA 2018, also called AMAP/UNEP 2015 inventory) against other global inventories. Next, the inventory was compared to a national inventory for Peru developed by the Artisanal Gold Council in preparation for Peru's NAP \cite{agc_reporte_2017}. Once the differences between the GMA 2018 inventory\cite{steenhuisen_development_2019} and the Peruvian national inventory were analyzed \cite{agc_reporte_2017}, the global inventory was re-gridded to the GEOS-Chem grid, and the emissions from grid boxes corresponding to different departments in Peru were scaled. The scaled inventories were used to create the simulations described in Table \ref{tab:all_geos_chem_simulations}. These simulations were used to investigate the sensitivity of the Hg concentration at distant locations to the changes in emissions from the grid boxes in the case study region. The simulated \hgc in the atmosphere was compared to the observed TGM concentration in the atmosphere to determine the sensitivity of the \hgc to the changes in emissions from individual grid boxes and multiple grid boxes. 
+    Chapter 2 of this thesis discussed the differences between the \gc model predictions of Hg at various monitoring stations and in Latin America. In one hypothesis, the difference between the model and the observations was attributed to how the emissions were parameterized in \gc. Generally, the input emissions in \gc are determined by the Hg inventory used; hence, we first evaluated the Hg inventory used in the simulations in Chapter 2 (GMA 2018, also called AMAP/UNEP 2015 inventory) against other global inventories. Next, the inventory was compared to a national inventory for Peru developed by the Artisanal Gold Council in preparation for Peru's NAP \cite{agc_reporte_2017}. Once the differences between the GMA 2018 inventory\cite{steenhuisen_development_2019} and the Peruvian national inventory were analyzed \cite{agc_reporte_2017}, the global inventory was re-gridded to the GEOS-Chem grid, and the emissions from grid boxes corresponding to different departments in Peru were scaled. The scaled inventories were used to create the simulations described in Table \ref{tab:all_geos_chem_simulations}. These simulations were used to investigate the sensitivity of the Hg concentration at distant locations to the changes in emissions from the grid boxes in the case study region. The simulated \hgc in the atmosphere was compared to the observed TGM concentration in the atmosphere to determine the sensitivity of the \hgc to the changes in emissions from individual grid boxes and multiple grid boxes. 
 \end{flushleft}
 
 \subsection{Mercury Emission Inventories}\label{c3_Mercury Emission Inventories}
@@ -52,8 +52,8 @@ Globally gridded emissions inventories such as those shown in Figure \ref{fig:Hg
 
 \begin{tabular}[H]{c}
 
-\subfloat[GMA 2015 Grid]{\includegraphics[width = 0.8\linewidth]{templates/figures/Peru_Maps/GMA2018inventory025x025.pdf}}\\
-\subfloat[GEOS Chem Grid]{\includegraphics[width = 0.8\linewidth]{templates/figures/Peru_Maps/GMA2018inventory2x25.pdf}}
+\subfloat[GMA 2018 (AMAP/UNEP 2015) inventory Grid Resolution]{\includegraphics[width = 0.8\linewidth]{templates/figures/Peru_Maps/GMA2018inventory025x025.pdf}}\\
+\subfloat[GEOS Chem Model Grid Resolution]{\includegraphics[width = 0.8\linewidth]{templates/figures/Peru_Maps/GMA2018inventory2x25.pdf}}
 
 \end{tabular}
   
@@ -138,20 +138,20 @@ where:
 \subsection{Observation Site Selection}\label{c3_site_selection}
 
 \begin{flushleft}
-TGM and GEM observation data from different locations in Latin America were analyzed and compared to the \gc simulated \hg concentrations for those sites in Chapter 2. The \gc predictions for ASGM contributions to atmospheric Hg concentration were higher at the CHC, making it an excellent candidate to use as a reference for comparison with the modified \gc Hg concentration predictions. Moreover, this site is the closest monitoring site to Peru hence it is expected that it would be more likely to detect atmospheric \hg changes that result from the changes in Hg emissions from the case study region. The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown in Figure \ref{fig:chc_time_series}.
+TGM and GEM observation data from different locations in Latin America were analyzed and compared to the \gc simulated \hg concentrations for those sites in Chapter 2. The \gc predictions for ASGM contributions to atmospheric Hg concentration were higher at the CHC, making it an excellent candidate to use as a reference for comparison with the modified \gc Hg concentration predictions. Moreover, this site is the closest monitoring site to Peru hence it is expected that it would be more likely to detect atmospheric \hg changes that result from the changes in Hg emissions from the case study region. The time series of the observed concentration at the CHC station between July 2014 and January 2016 is shown in Figure \ref{fig:chc_time_series}. The red line indicates the daily average concentration, while the grey line shows the 120-day moving average, which highlights the upward trend in the daily averages.
 \end{flushleft}
 
 \begin{figure}[H]
   \includegraphics[width=\textwidth]{templates/figures/GMOS_Sites/ObsTimeSeries.pdf}
  
-  \caption[The average daily TGM concentration at CHC in ng m\textsuperscript{-3} as a function of time over the measurement period from July 2014 to January 2016.]{The average daily TGM concentration at CHC in ng m\textsuperscript{-3} as a function of time over the measurement period from July 2014 to January 2016\cite{koenig_seasonal_2021}. The daily average concentration is indicated by the red line, while the grey line shows the 120-day moving average, which highlights the upward trend in the daily averages}
+  \caption[The average daily TGM concentration at CHC in ng m\textsuperscript{-3} as a function of time over the measurement period from July 2014 to January 2016.]{The average daily TGM concentration at CHC in ng m\textsuperscript{-3} as a function of time over the measurement period from July 2014 to January 2016\cite{koenig_seasonal_2021}. The red line indicates the daily average concentration, while the grey line shows the 120-day moving average, which highlights the upward trend in the daily averages.}
   \label{fig:chc_time_series}
   \centering
 \end{figure}
 \FloatBarrier
 \begin{flushleft}
 
-The detailed characteristics of the observations over this measurement period were described in Koenig et al.\cite{koenig_seasonal_2021}; hence my analysis focused on using the observation TGM data to evaluate the performance of the GEOS-Chem model in predicting the \hg based on the input \hg emission inventories. As shown in Figure \ref{fig:chc_time_series}, the TGM concentration at CHC showed an upward trend, which Koenig et al. (2021) attribute to El Ni\~no-Southern Oscillation (ENSO)\cite{koenig_seasonal_2021}. As a result, they categorized the measured TGM concentrations in the atmosphere at the CHC site as normal conditions (NC), 2014-07 to 2015-05, and ENSO conditions from 2015-06 to 2016-01. To reduce the number of records associated with ENSO, I limited my analysis to one year's worth of data from 2014-07 to 2015-07.
+The detailed characteristics of the observations over this measurement period were described in Koenig et al.\cite{koenig_seasonal_2021}; hence my analysis focused on using the observation TGM data to evaluate the performance of the GEOS-Chem model in predicting the \hg based on the input \hg emission inventories. As shown in Figure \ref{fig:chc_time_series}, the TGM concentration at CHC showed an upward trend, which Koenig et al. (2021) attribute to El Ni\~no-Southern Oscillation (ENSO)\cite{koenig_seasonal_2021}. As a result, they categorized the measured TGM concentrations in the atmosphere at the CHC site as normal conditions (NC), 2014-07 to 2015-05, and ENSO conditions from 2015-06 to 2016-01. To reduce the number of records associated with ENSO, we limited our analysis to one year's worth of data from 2014-07 to 2015-07.
 \end{flushleft}
 
 \subsection{ Inverse Modelling with Markov Chain Monte Carlo}\label{c3_mcmc}
@@ -167,11 +167,11 @@ where:\\
     \item [$p$] contains all variables in the model that we will not optimize as part of the inversion
     \item [$\epsilon_0$] a vector of observations errors, which includes errors from measurements, the forward model, and model parameters 
 \end{description}
- Forward models describe the effects of the system as functions of the cause $x$, usually by using equations that describe the system's physics. The cause ($x$) can be quantified via inversion of the model based on the effect ($y$). Moreover, $x$ is estimated with some statistical error when $\epsilon_0 \neq 0$ is present. The solution for $x$ is called the optimal estimate, posterior estimate, or retrieval \cite{brasseur_modeling_2017}. 
+ Forward models describe the effects of the system as functions of the cause $x$, usually by using equations that describe the system's physics. The cause ($x$) can be quantified via inversion of the model based on the effect ($y$). Moreover, $x$ is estimated with some statistical error when $\epsilon_0 \neq 0$ is present. The solution for $x$ is called the optimal estimate, posterior estimate \cite{brasseur_modeling_2017}. 
  \end{flushleft}
 
 \begin{flushleft}
-    The uncertainty in obtaining $x$ from $y$ requires us to consider constraints on the value of $x$ called priors that could reduce the error on the optimal estimate.  We generally use the prior estimate $x_A$ as a constraint, representing our best estimate of $x$ before the observations. It has some error $\epsilon_A$. As a result, the ideal estimate must consider the relative information given by the observations $y$ and the prior estimate $x_A$. The error statistics of the estimates $\epsilon_O$ and $\epsilon_A$. In inverse modeling, we can analyze the relative importance of observations and prior knowledge. In this way, it provides insight into the effectiveness of an observing system in constraining $x$\cite{brasseur_modeling_2017}.
+    The uncertainty in obtaining $x$ from $y$ requires us to consider constraints on the value of $x$ called priors that could reduce the error on the optimal estimate.  We generally use the prior estimate $x_A$ as a constraint, representing our best estimate of $x$ before the observations. The GMA 2018 inventory estimates of the emissions from the respective grid boxes are used as priors for our analysis. The prior estimate $x_A$ has some error $\epsilon_A$. As a result, the ideal estimate must consider the relative information given by the observations $y$ and the prior estimate $x_A$. In inverse modeling, we can analyze the relative importance of observations and prior knowledge. In this way, it provides insight into the effectiveness of an observing system in constraining $x$ (Hg emissions) \cite{brasseur_modeling_2017}.
 
     \end{flushleft}
 
@@ -189,13 +189,13 @@ where:
 \end{flushleft}
 
 \begin{description}[leftmargin=!,labelwidth={5 em}]
-    \item [$Hg_{m(MdD)}$] is the Hg concentration signal resulting from emissions from the Madre de Dios (MdD) grid box
-    \item [$Hg_{m(S-Puno)}$] is the Hg concentration signal resulting from emissions from the South Puno (S-Puno) grid box
-    \item [$Hg_{m(N-Puno)}$] is the Hg concentration signal resulting from emissions from the North Puno (N-Puno) grid box
-    \item [$Hg_{m(Apr)}$] is the Hg concentration signal resulting from emissions from the Apurimac (Apr) grid box
-    \item [$Hg_{m(Aqp)}$] is the Hg concentration signal resulting from emissions from the Arequipa (Aqp) grid box
+    \item [$Hg_{m(MdD)}$] is the Hg concentration signal resulting from emissions from the Madre de Dios (MdD) grid box.
+    \item [$Hg_{m(S-Puno)}$] is the Hg concentration signal resulting from emissions from the South Puno (S-Puno) grid box.
+    \item [$Hg_{m(N-Puno)}$] is the Hg concentration signal resulting from emissions from the North Puno (N-Puno) grid box.
+    \item [$Hg_{m(Apr)}$] is the Hg concentration signal resulting from emissions from the Apurimac (Apr) grid box.
+    \item [$Hg_{m(Aqp)}$] is the Hg concentration signal resulting from emissions from the Arequipa (Aqp) grid box.
     \item [$Hg_{m_0}$] is the baseline Hg concentration signal.
-    \item [$\epsilon$] is the error
+    \item [$\epsilon$] is the error in the prior estimates.
 \end{description}
 
 \begin{flushleft}
@@ -205,11 +205,11 @@ Each of the $Hg_{m(region)}$ terms of Equation \ref{Hg_conc} represent signals f
 \begin{split}\label{Hg_cons_expanded_form}
 Hg_{conc}={}& (m_{(MdD)}Hg_{sig_{(MdD)}} -m_oHg_{sig_{(MdD)}})+ (m_{(S-Puno)}Hg_{sig_{(S-Puno)}} -m_oHg_{sig_{(S-Puno)}}) \\
             &+ (m_{(N-Puno)}Hg_{sig_{(N-Puno)}} -m_0Hg_{sig_{(N-Puno)}}) + (m_{(Apr)}Hg_{sig_{(Apr)}} -m_oHg_{sig_{(Apr)}}) \\
-            &+ (m_{(Aqp)}Hg_{sig_{(Aqp)}} -m_oHg_{sig_{(Aqp)}})+Hg_{m_0}
+            &+ (m_{(Aqp)}Hg_{sig_{(Aqp)}} -m_oHg_{sig_{(Aqp)}})+Hg_{m_0} + \epsilon
 \end{split}
 \end{align}
 
-Since the values of $m_{(region)}$ are the state variable we want to estimate, they can be represented as $\theta_i=m_{(region)}, i=1$ and the other terms, including the background concentration, are combined into one constant, C:
+Since the values of $m_{(region)}$ are the state variable we want to estimate, they can be represented as $\theta_i=m_{(region)}, i=1$ and the other terms, including the background concentration and error, are combined into one constant, C:
 
 \begin{equation}
 \begin{aligned}
@@ -245,7 +245,7 @@ where:
 Bayes’ theorem relates posterior the probability distributions of parameters ($f_{post}(\theta, D)$) to the likelihood function ($f(D | \theta)$) and prior knowledge of the parameter distributions ($f_{prior}(\theta)$)
 
 \begin{flushleft}
-The MCMC enables the estimation of the sampling of the posterior distribution, which is the left-hand side of Equation~\ref{bayes_eq} by directly computing $P(\theta)$ and $P(D|\theta)$, and their product, for a very large ensemble of values of $\theta$ sampling strategically the n-dimensional space defined by the dimension of $\theta$\cite{brasseur_modeling_2017}. At each stage of MCMC sampling, a new parameter set $(\theta^{k+1})$ is drawn in the vicinity of the previous parameter set $(\theta^{k})$, that is from a normal distribution with $(\theta^{k})$, as the mean. The posterior probability of the new parameter set is calculated and compared to the previous set $(r = \frac{f^{k+1}}{f^k})$. If $r$ is greater than 1, the sample set is accepted, and if r is less than 1, the sample set is accepted with probability $r$ (and rejected with probability $1-r$). If the new parameter set is rejected, we retain the previous parameter set $(\theta^{k+1}= \theta^k)$. This procedure is repeated for 1000 samples. We use these samples to compute summary statistics on the posterior distributions of the parameters. 
+The MCMC with the Metropolis-Hastings algorithm enables the estimation of the sampling of the posterior distribution, which is the left-hand side of Equation~\ref{bayes_eq} by directly computing $P(\theta)$ and $P(D|\theta)$, and their product, for a very large ensemble of values of $\theta$ sampling strategically the n-dimensional space defined by the dimension of $\theta$\cite{brasseur_modeling_2017}. When applying MCMC sampling, a new parameter set $(\theta^{k+1})$ is drawn from normal distributions with $(\theta^{k})$, as the mean. Using the new parameter set, the posterior probability is calculated and compared to the previous set $(r = \frac{f^{k+1}}{f^k})$. With probability $r$ greater than 1, the sample set is accepted, while with probability $r$ less than 1, the sample set is rejected. Should the new parameter set be rejected, the previous parameter set $(\theta^{k+1}= \theta^k)$ will be retained. We repeat this process for 1000 samples. Using these samples, we compute summary statistics on parameter posterior distributions. 
 \end{flushleft}
 
 % \begin{align}
@@ -376,7 +376,7 @@ The \on reproduces the \iq and 95th \% confidence interval better than it reprod
 \begin{flushleft}
     Figure \ref{fig:density_plots_noASGM_vs_ASGM_vsObs}, b) shows how the \hgc produced by the \on have a distribution that is similar to the distribution of the observations in terms of standard deviation, \iq and \nft. The \off produced \modelc shows no instance of high \hg concentrations at CHC, and the high concentrations are only produced by the \on. These density plots inform us that ASGM emissions primarily influence the range of observed Hg concentrations in the atmosphere at CHC. Consequently, metrics such as the standard deviation, \iq, and \nft may lead to more informative comparisons between \modelc and \obsC than the mean.
 \end{flushleft}
-\newpage
+
 
 \subsection{Comparison of Observations with Emission Modification}\label{c3_obs_v_modifications}
 \begin{flushleft}
@@ -508,7 +508,7 @@ Total                  & $101$                            &  $11.45 - 236.69$ \\
 
 \begin{flushleft}
 
- Our study produced top-down estimates of ASGM Hg emissions for four Peruvian departments and thus the country's total ASGM Hg emissions estimates. Table \ref{tab:MCMC_estimates} shows Peru emits 101.23 tons of Hg annually, ranging from 11.45 tons to 236.69 tons. There is a wide range here, but it is a confidence interval based on the data and the uncertainty of the model discussed so far. The estimates would be improved if more relevant measurements of atmospheric Hg were used instead of just one-site data. Another potential source of refinement in the estimates may result from the model's improved parameterization of vegetation uptake discussed in Feinberg et al.(2022) \cite{feinberg_evaluating_202}.
+ Our study produced top-down estimates of ASGM Hg emissions for four Peruvian departments and thus the country's total ASGM Hg emissions estimates. Table \ref{tab:MCMC_estimates} shows Peru emits 101.23 tons of Hg annually, ranging from 11.45 tons to 236.69 tons. There is a wide range here, but it is a confidence interval based on the data and the uncertainty of the model discussed so far. The estimates would be improved if more relevant measurements of atmospheric Hg were used instead of just one-site data. Another potential source of refinement in the estimates may result from the model's improved parameterization of vegetation uptake discussed in Feinberg et al \cite{feinberg_evaluating_2022}.
   \end{flushleft}
   
   \begin{flushleft}
